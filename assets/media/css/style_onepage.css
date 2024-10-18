@@ -53,7 +53,7 @@
 }
 
 .edd-arrow {
-	color: #21409a;
+	color: #039a0f;
 }
 
 .slider .wrap_logo {
@@ -158,7 +158,7 @@ content: "";
 .wrap_logo a,
 .wrap_logo a h4,
 .wrap_logo a i {
-	color: #21409a;
+	color: #039a0f;
 }
 
 .loaded .wrap_logo a,
@@ -252,7 +252,7 @@ content: "";
 
 #sub_bg_area .logo_page h4 {
     font-family: riftbold;
-    color: #21409a;
+    color: #039a0f;
     margin: 15px 0 6px 0;
     font-size: 30px;
     letter-spacing: 0.02em;
@@ -358,7 +358,7 @@ content: "";
 }
 
 .post-tags a:hover{
-	background: #21409a;
+	background: #039a0f;
 }
 
 .docs-posts .title_wrap h4{
@@ -681,7 +681,7 @@ font-family: san_francisco_textbold;
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: #21409a;
+	background-color: #039a0f;
 }
 
 .wrap_company_value ul li:hover .trans_slow,
@@ -748,7 +748,7 @@ color: #fff
 /* ---------------------------------------------------------------------------------- Style The team----*/
 
 .wrap_leader {
-    background: #21409a;
+    background: #039a0f;
     padding: 90px 0;
     margin-bottom: 60px;
 }
@@ -956,7 +956,7 @@ color: #fff
 .anim_curtain_right:before {
 	content: "";
 	position: absolute;
-	background-color: #21409a;
+	background-color: #039a0f;
 	width: 100%;
 	height: 100%;
 	-moz-transition-delay: 100ms;
@@ -1064,7 +1064,7 @@ color: #fff
 	font-size: 20px;
 	font-family: san_francisco_textbold;
 	text-transform: uppercase;
-	color: #21409a;
+	color: #039a0f;
 }
 
 .item_service .info h3{
@@ -1197,7 +1197,7 @@ color: #fff
 	top: inherit;
 	-webkit-box-shadow: -5px -5px 15px rgb(48 54 61 / 20%);
 	box-shadow: -5px -5px 15px rgb(48 54 61 / 20%);
-	background: #21409a;
+	background: #039a0f;
 	opacity: 0;
 	pointer-events: none;
 }
@@ -1211,7 +1211,7 @@ color: #fff
     width: 0;
     position: absolute;
     pointer-events: none;
-    border-color: #21409a transparent transparent;
+    border-color: #039a0f transparent transparent;
     border-width: 10px;
     margin-left: -10px
 }
@@ -1670,7 +1670,7 @@ display: inline-block;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #21409a;
+    background-color: #039a0f;
 }
 
 .wrap_recruit .info:hover .trans_slow{
@@ -1743,7 +1743,7 @@ display: inline-block;
 }
 
 .wrap_recruit ul li .info:hover h5{
-    background: #21409a;
+    background: #039a0f;
     color: #fff;
 }
 
@@ -1770,7 +1770,7 @@ display: inline-block;
 .recruit_detail .bgcolor_theme td{ 
 font-family: san_francisco_textbold;
     border: 0;
-    background: #29419c;
+    background: #039a0f;
 	color: #fff
 }
 
@@ -2082,7 +2082,7 @@ height: 100%;
 		font-size: 18px;
 		text-transform: uppercase;
 		font-family: san_francisco_textbold;
-		color: #21409a;
+		color: #039a0f;
 	}
 	.recruit_detail .recruit_link_hover a{
     font-size: initial;
@@ -2437,7 +2437,7 @@ content: "";
 
 .style_service_info_2 ul li strong{
     font-size: 20px;
-    color: #21409a;
+    color: #039a0f;
 }
 
 .style_service_info_2 ul li:after{
@@ -2594,19 +2594,19 @@ content: "";
 }
 
 .menu_service li:hover{
-	border: 1px solid #21409a;
+	border: 1px solid #039a0f;
 }
 
 .menu_service li:hover span:before{
-	border-color: transparent transparent transparent #21409a;
+	border-color: transparent transparent transparent #039a0f;
 }
 
 .menu_service li:hover span:after{
-	background: #21409a;
+	background: #039a0f;
 }
 
 .menu_service li:hover a{
-    color: #21409a
+    color: #039a0f
 }
 
 .menu_service li img{
@@ -3641,7 +3641,7 @@ color: #ffffff;
 }
 
 .maps_contact {
-    background: #21409a;
+    background: #039a0f;
     min-height: 100%;
     margin: 100px 0;
 }
@@ -4061,7 +4061,7 @@ border: 0 !important;
 
 .wrap_recruit_single .logo h4{
 	font-family: riftbold;
-    color: #21409a;
+    color: #039a0f;
     margin: 15px 0 6px 0;
     font-size: 30px;
     letter-spacing: 0.02em;
@@ -4323,7 +4323,7 @@ content: "";
 
 .item_width_2 .wrap_list .list_img {
 	background: 0;
-	border: solid 3px #21409a;
+	border: solid 3px #039a0f;
 	border-radius: 10px;
 	padding: 0;
 	display: inline-block;
@@ -4404,7 +4404,7 @@ content: "";
 }
 
 .why-me .item_width_2 h5{
-    color: #21409a;
+    color: #039a0f;
     font-family: san_francisco_textbold;
     text-transform: uppercase;
     display: inline-block;
@@ -4479,7 +4479,7 @@ width: 39px;
 }
 
 .why-me .item_width_2 a{
-    background: #21409a;
+    background: #039a0f;
     padding: 10px 20px;
     color: #fff;
     text-transform: uppercase;
@@ -4491,7 +4491,7 @@ width: 39px;
 
 .box-drop{
     position: relative;
-    background: #21409a;
+    background: #039a0f;
     border-radius: 10px;
     width: 62%;
     display: inline-block;
@@ -4576,7 +4576,7 @@ box-shadow: 10px 14px 12px -4px #01005b;
 }
 
 .item_width_2 .list_bottom .position-absolute a:last-child{
-background: linear-gradient(90deg, #21409a 0%, #0b2368 100%);
+background: linear-gradient(90deg, #039a0f 0%, #0b2368 100%);
     border: solid 2px #fff;
     border-radius: 10px;
     color: #fff;
@@ -4588,7 +4588,7 @@ background: linear-gradient(90deg, #21409a 0%, #0b2368 100%);
 }
 
 .form_container{
-	background: #21409a;
+	background: #039a0f;
 	text-align: center;
 	border-radius: 20px;
 	padding: 60px;
@@ -4622,7 +4622,7 @@ background: linear-gradient(90deg, #21409a 0%, #0b2368 100%);
 }
 
 .padding-30 h3{
-	color: #21409a;
+	color: #039a0f;
 	font-family: san_francisco_textbold;
 	text-transform: uppercase;
 	line-height: normal

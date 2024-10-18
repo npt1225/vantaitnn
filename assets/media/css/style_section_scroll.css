@@ -19,7 +19,7 @@ body, html {
 
 /*
 #section1{
-	background-color: #21409a;
+	background-color: #039a0f;
 }*/
 
 .no-touch #cd-vertical-nav {
@@ -74,7 +74,7 @@ text-align: left;
     box-shadow: inherit;
 }
 .position_f .no-touch #cd-vertical-nav a.is-selected .cd-dot {
-    background-color: #21409a !important;
+    background-color: #039a0f !important;
 }
 .no-touch #cd-vertical-nav .cd-dot {
     position: relative;
@@ -93,7 +93,7 @@ text-align: left;
     transform-origin: 50% 50%;
 }
 .position_f .cd-dot {
-    background-color: #21409a !important;
+    background-color: #039a0f !important;
 }
 .no-touch #cd-vertical-nav .cd-label {
     position: relative;
@@ -111,7 +111,7 @@ text-align: left;
     transform-origin: 50% 100%;
 }
 .position_f #cd-vertical-nav .cd-label {
-    color: #21409a !important;
+    color: #039a0f !important;
 }
 
 /* Touch devices */

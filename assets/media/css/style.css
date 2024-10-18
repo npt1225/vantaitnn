@@ -121,7 +121,7 @@ body.video_open {
     margin: 0;
     font-family: riftbold;
     line-height: initial;
-    color: #21409a;
+    color: #039a0f;
     text-transform: uppercase;
     font-size: 36px;
     letter-spacing: 0.02em;
@@ -269,7 +269,7 @@ body.video_open {
 }
 
 .wrap_logo a img {
-    width: 150px;
+    width: 113px;
     display: inline-block;
 }
 
@@ -277,7 +277,7 @@ body.video_open {
     margin-top: 20px;
     margin-bottom: 0;
     font-family: riftbold;
-    color: #21409a;
+    color: #039a0f;
     text-transform: uppercase;
     font-size: 30px;
 }
@@ -480,7 +480,7 @@ body.position_f .wrap_button_menu .menu_btn {
     -o-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
     -webkit-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-    background: #21409a;
+    background: #039a0f;
 }
 
 body.position_f .Logo_scroll {
@@ -635,7 +635,7 @@ body.position_f .Logo_scroll {
 .diary .wrap_line polyline:nth-child(8),
 .diary .wrap_line polyline:nth-child(9),
 .diary .wrap_line polyline:nth-child(10) {
-    fill: #21409a !important;
+    fill: #039a0f !important;
     fill-opacity: inherit;
     stroke: #fff !important;
     transition-delay: 0.5 s;
@@ -647,7 +647,7 @@ body.position_f .Logo_scroll {
 .menu_open .wrap_line polyline:nth-child(8),
 .menu_open .wrap_line polyline:nth-child(9),
 .menu_open .wrap_line polyline:nth-child(10) {
-    fill: #21409a !important;
+    fill: #039a0f !important;
     fill-opacity: inherit;
     stroke-width: 1px;
     stroke: #fff !important;
@@ -675,6 +675,8 @@ body.position_f .Logo_scroll {
 }
 
 .menu_sm_inner .row {
+    padding-top: 40px;
+    padding-left: 60px;
     margin-left: 0;
     margin-right: 0;
 }
@@ -875,7 +877,7 @@ footer .box_share ul li:hover a {
 }
 
 .box_share ul li a:hover {
-    background: #21409a;
+    background: #039a0f;
     transition: all 0.8s ease;
 }
 
@@ -1111,7 +1113,7 @@ footer .box_share ul li:hover a {
 }
 
 .box_global_lang .edd-root-open-below .edd-body {
-    background: #21409a;
+    background: #039a0f;
     position: relative;
     margin-top: 20px;
 }
@@ -2274,7 +2276,7 @@ footer .style_icon li a {
 .bag_ani_footer {
     -webkit-transform: skewX(31.1deg);
     transform: skewX(31.1deg);
-    background: #21409a;
+    background: #039a0f;
     width: 40%;
     height: 100%;
     display: inline-block;
@@ -2290,7 +2292,7 @@ footer .style_icon li a {
 .bottom_footer .bag_ani_footer {
     -webkit-transform: skewX(31.1deg);
     transform: skewX(31.1deg);
-    background: #21409a;
+    background: #039a0f;
     width: 20%;
     height: 100%;
     display: inline-block;
@@ -2726,7 +2728,7 @@ body::-webkit-scrollbar,
 }
 
 .form_container::-webkit-scrollbar-track {
-    background-color: #21409a;
+    background-color: #039a0f;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -2844,7 +2846,7 @@ body::-webkit-scrollbar-thumb {
     margin-top: -10px;
     top: -10px;
     display: inline-block;
-    background-color: #17479e;
+    background-color: #039a0f;
     border: 1px solid #f7941d;
     transition: all 500ms ease;
     cursor: pointer;
@@ -3284,7 +3286,7 @@ body::-webkit-scrollbar-thumb {
     background: white;
     margin-bottom: 1px;
     cursor: pointer;
-    background: #21409a;
+    background: #039a0f;
     border: 1px solid #f7941;
 }
 
@@ -3313,7 +3315,7 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     height: 11px;
     width: 11px;
-    background: #21409a;
+    background: #039a0f;
     border-radius: 100%;
     border: 1px solid white;
     z-index: 100;
@@ -3323,7 +3325,7 @@ body::-webkit-scrollbar-thumb {
     height: 9px;
     width: 9px;
     position: absolute;
-    background: #21409a;
+    background: #039a0f;
     z-index: 100;
     border-radius: 100%;
 }
@@ -3894,7 +3896,7 @@ body.bg-black .snowfall-flakes,
 }
 
 #section1 {
-    background: #29419c;
+    background: #039a0f;
 }
 
 
@@ -4155,7 +4157,7 @@ slider{
     width: 400px;
     bottom: 0;
     right: 0;
-    background: #29419c;
+    background: #039a0f;
     padding: 15px 0 15px 60px;
     color: #fff;
     font-size: 18px;
