@@ -1,0 +1,1534 @@
+﻿@media screen and (min-width: 1200px) {
+	.box_wrapper_1 {
+		padding: 49px 53px !important;
+	}
+	.box_counter_custom .counter {
+		font-size: 290px;
+		line-height: 1;
+	}
+	.fancybox-slide--html {
+		padding: 6px
+	}
+	.team_box_content {
+		padding: 0 20%;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.no-touch #cd-vertical-nav {
+		top: 30%;
+	}
+	#line_load,
+	#line-UI {
+		bottom: -142vh;
+		right: -108vh;
+		height: auto;
+	}
+	#line_load svg,
+	#line-UI svg {
+		width: 195vh;
+		height: 165vh;
+	}
+	.menu_open .menu_sm_inner {
+		overflow-y: scroll;
+		height: 800px;
+	}
+	.menu_container {
+		padding: 0 6%;
+	}
+	/*
+	.nav-item.dropdown .nav-sub-list {
+		position: inherit !important;
+		display: inline-block;
+		opacity: 1;
+		visibility: visible;
+		left: 20px !important;
+		top: inherit;
+	}*/
+	.nav-item.dropdown .nav-sub-list {
+    position: inherit; 
+    left: 0 !important;
+    justify-content: space-between;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.93, 0.88, 0.1, 0.8);
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+    overflow: hidden;
+}
+
+	.nav-item.dropdown:hover .nav-sub-list {
+		visibility: visible;
+		opacity: 1;
+		max-height: 500px;
+		transition: max-height 0.5s ease-in;
+		margin: 0 0 15px 15px;
+	}
+
+	.menu_col .nav-item.dropdown .nav-item-inner-heading:after {
+		display: none
+	}
+	.menu_col .nav-item {
+		margin-bottom: 15px;
+	}
+	.cd-section {
+		min-height: inherit;
+	}
+	.bg_1:before,
+	.bg_1:after {
+		content: "";
+		display: none
+	}
+	.bg_1 {
+		width: 100%;
+		padding: 20px 80px;
+		height: 200px;
+	}
+	.bg_2 {
+		display: none;
+	}
+	.bg_3 {
+		left: inherit;
+		right: 105px;
+		height: 240px;
+		top: 40px;
+		width: 200px;
+	}
+	.bg_4 {
+		top: 40px;
+		left: inherit;
+		right: 30px;
+		height: 240px;
+		width: 200px;
+	}
+	.cloud_2 {
+		width: 300px;
+		height: 100px;
+	}
+	.cloud_1 {
+		width: 94px;
+		height: 110px;
+		top: 75px;
+		right: 0;
+	}
+	.background_layer {
+		margin-bottom: 60px;
+		z-index: 1;
+		position: relative;
+	}
+	.gallery_content .gallery_item a span {
+		opacity: 1;
+		transform: inherit;
+		bottom: 3px;
+		top: inherit;
+		left: inherit;
+		margin-left: 11px;
+	}
+	.gallery_item a:before {
+		content: "";
+		background: #0000008f;
+		box-shadow: initial;
+		height: 35%;
+		width: 27%;
+		bottom: 0;
+		top: inherit;
+		right: 0;
+		border-top-left-radius: 7px;
+	}
+	.gallery_item {
+		transform: inherit;
+		width: 25% !important;
+		display: inline-block;
+		border: solid 2px #fff;
+		position: relative;
+	}
+	.gallery_item img {
+		margin: 0 !important;
+		width: 100%;
+		transform: inherit;
+	}
+	.gallery_content,
+	.gallery_content .gallery_item a span,
+	.gallery_item:nth-child(1) img,
+	.gallery_item:nth-child(3) img {
+		-moz-transform: scaleX(-1);
+		-o-transform: scaleX(-1);
+		-webkit-transform: scaleX(-1);
+		transform: scaleX(-1);
+		filter: FlipH;
+		-ms-filter: "FlipH";
+	}
+	.cd-section .wrap_slider {
+		position: inherit;
+		display: inline-block;
+	}
+	.slider_skew {
+		padding: 0 80px;
+	}
+	.gallery_content {
+		position: relative;
+		width: 100% !important;
+		height: 100% !important;
+	}
+	[data-aos^=fade][data-aos^=fade].aos-animate .wrap_timeline {
+		position: inherit;
+		margin: 120px 0 30px 0;
+		transform: initial;
+	}
+	#wrap_history {
+		background: #000000;
+	}
+	.timeline-navigation#leftNav {
+		left: -20px;
+		opacity: inherit;
+	}
+	.timeline-navigation#rightNav {
+		right: -20px;
+		opacity: inherit;
+	}
+	.horizontal-timeline .events-content li .item {
+		width: 100%;
+	}
+	.more_listings {
+		top: 2px;
+		left: 0;
+		width: 0.5%;
+	}
+	.wrap_timeline .container {
+    width: 100%;
+    max-width: 100%;
+	}
+	.slider_events .body_text {
+		padding-right: 0;
+	}
+	.slider_events .body_text .date_more {
+		left: 0;
+		position: inherit;
+	}
+	.slider_events .date_more .button_Smore span {
+border-radius: 0;
+    border: solid 2px #f7941d;
+    border-left: 0;
+    border-right: 0;
+    padding: 1px 0;
+    font-size: 15px;
+    letter-spacing: 0.06em;
+
+    margin: 0;
+	}
+	.slider_events .date_more .button_Smore:before,
+	.slider_events .date_more .button_Smore:after {
+		display: none;
+	}
+	.box_counter_custom .counter {
+		font-size: 240px;
+		line-height: 200px;
+	}
+	.box_grid_wrap .row>.box_border img {
+		width: 100%
+	}
+	.box_wrapper_1 {
+		padding: 30px !important;
+	}
+	[data-aos^=fade][data-aos^=fade].aos-animate .bag_ani_footer {
+		left: 15%;
+	}
+	.style_icon li {
+		width: 100%;
+	}
+	.stat_wrap li p {
+width: 150px;
+    color: #424d54;
+    font-size: 15px;
+    letter-spacing: inherit;
+    display: inline-block;
+	}
+	.wrap_content_1 {
+		margin-top: 30%;
+		width: calc(100% - 0%);
+	}
+	.stat_wrap .stat_number{
+    display: inherit;
+    width: -webkit-fill-available;
+    font-size: 30px;
+	}
+	.cd_section_onepage .stat_wrap .stat_number{
+    display: initial;
+	}
+	.bag_skewed {
+		display: none;
+	}
+
+	/* --------------------------- .Style Trang chủ */
+	.sub_bg:after {
+		display: none
+	}
+	.textbox_1 .col-md-6 {
+		width: 100%;
+		display: inline-table;
+		flex: initial;
+		max-width: 100%;
+	}
+	.content .stat_wrap li {
+		padding: 32px 10px 10px 10px;
+		text-align: left;
+		border: solid 1px #ddd;
+		width: calc(25% - 30px);
+		margin: 30px 15px 0 15px;
+	}
+	.wrap_company_value ul li:nth-child(1) {
+		width: 100%;
+		margin: 0;
+	}
+	.wrap_company_value ul li:nth-child(2),
+	.wrap_company_value ul li:nth-child(3) {
+		width: 50%;
+		margin: 0;
+		margin-top: -1px;
+		margin-bottom: 30px;
+	}
+	.wrap_company_value ul li .box-border-hover {
+		padding: 20px;
+	}
+	.wrap_company_value ul li h5 br {
+		display: none
+	}
+	.wrap_company_value ul li h5:after {
+		width: 4px;
+		left: -21px;
+		height: 30px;
+	}
+	.video_popup_1 .box_content {
+		width: 50%;
+	}
+	#sub_bg_area .row>a {
+		display: inline-block;
+		width: 100%;
+	}
+	#sub_bg_area .logo_page {
+		top: 0;
+		padding: 10px;
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+	}
+	#sub_bg_area.show-logo .logo_page,
+	#sub_bg_area.show-logo1 .logo_page {
+		-webkit-transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
+		-o-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+	#sub_bg_area .logo_page span {
+		width: 20%;
+		float: left;
+	}
+	#sub_bg_area .logo_page h4 {
+		width: 80%;
+		padding: 30px 0 0px 30px;
+		float: left;
+	}
+	#sub_bg_area .logo_page i {
+		padding: 0 0 0 30px;
+	}
+	/* --------------------------- .Style Giới thiệu*/
+	.wrap_leader .title_leader h5,
+	.wrap_leader .title_leader p {
+		width: 100%;
+	}
+	.wrap_leader .title_leader p {
+		padding-left: 78px;
+		margin-top: 15px;
+	}
+	.wrap_leader .title_leader p:before {
+		display: none
+	}
+	.wrap_tab .nav-tabs li {
+		padding: 0 30px;
+	}
+	/* --------------------------- .Style Đội ngũ lãnh đạo*/
+	.item_member:nth-child(odd) {
+		flex-direction: inherit;
+	}
+	.wrap_member_companies .col-md-12 {
+		width: 100%;
+		flex: 0 0 100%;
+		max-width: initial;
+	}
+	.wrap_member_companies .padding__,
+	.item_service .info {
+		padding: 0px;
+		margin-bottom: 15px;
+	}
+	/* --------------------------- .Style Công ty thành viên*/
+	.hover_mask .bag_symbol:before,
+	.hover_mask .bag_symbol:after {
+		display: none
+	}
+	.hover_mask:hover:before {
+		content: "";
+		background: 0;
+	}
+	.hover_mask a img {
+		display: none !important
+	}
+	.hover_mask a {
+		background: url(../img/icon_hover_click_mobile.svg) no-repeat 100%;
+		transform: inherit !important;
+		position: absolute;
+		margin: 0 !important;
+		top: inherit;
+		bottom: 0;
+		right: 0 !important;
+		width: 53.3px;
+		height: 32.42px;
+		opacity: inherit !important;
+	}
+	#nav_2 .hover_mask a {
+		background: url(../img/icon_hover_click_v_mobile.svg)no-repeat 100%;
+	}
+	/* --------------------------- .Style Thư viện hình video*/
+	.wrap_news_event [data-aos=fade-left],
+	.wrap_service [data-aos=fade-left] {
+		transform: inherit;
+	}
+	.wrap_news_event .recent-posts__item {
+		display: inherit;
+	}
+	.wrap_news_event .title_wrap {
+		margin-bottom: 15px;
+
+	}
+	.wrap_news_event .recent-posts__thumb {
+		margin-right: 0;
+		width: 100%;
+		padding-bottom: 15px;
+		position: relative;
+		-ms-flex-negative: 0;
+		flex-shrink: 0;
+		float: none;
+	}
+	.wrap_news_event .recent-posts__thumb img {
+		    position: inherit;
+    width: 100% !IMPORTANT;
+	}
+	.wrap_news_event .recent-posts__item p {
+		position: inherit;
+		text-align: left;
+		margin: 0;
+	}
+	.news_event_detail img {
+    width: 100% !important;
+    height: 100%;
+	}
+	/* --------------------------- .Style Tin tức sự kiện*/
+	.wrap_recruit .style1i_1 ul li,
+	.wrap_recruit .style1i_2 ul li,
+	.wrap_recruit .style1i_1 ul li:last-child {
+		width: 50%;
+	}
+	/* --------------------------- .Style Tuyển dụng*/
+	#wrap_news_events .title_wrap_ani {
+		z-index: inherit;
+	}
+	/* --------------------------- .GiangSinh*/
+	.cd-section.rep_home{
+		overflow: hidden;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.menu_open .menu_sm_inner {
+		height: 768px;
+		top: 70px;
+		padding: 20px 0;
+	}
+	
+	.style-css-1 a {
+		color: inherit;
+	}
+	
+	.style-css-1.style-css-1 .bootstrap-select.btn-group.fit-width .btn .filter-option, .style-css-1.style-css-1 .selectpicker, .btn-group > .btn:first-child {
+		color: initial;
+	}
+	
+	.item_width_5 {
+		width: calc(33.3% - 33px);
+		margin: 0 15px 30px 15px;
+		vertical-align: top;
+	}
+	
+	.style-css-2 .col-lg-8,
+	.style-css-2 .col-lg-4{
+		width: 100%;
+		max-width: 100%;
+		flex: inherit;
+	}
+	
+	.style-css-2 .col-lg-4 .recent-posts{
+		text-align: center
+	}
+	
+	.style-css-2 .col-lg-4 .recent-posts__item {
+		vertical-align: top;
+		width: calc(50% - 33px);
+		margin: 15px;
+		display: inline-block;
+	}
+	
+	.box-drop {
+		width: 100%;
+	}
+	
+	.why-me .item_width_2 h5 span {
+		top: 0;
+	}
+	
+	.style-css-1 a {
+		color: #424d54;
+	}
+	
+	.style-color .menu_align a {
+		color: #424d54 ;
+	}
+	
+	.style-color .filter-option {
+		color: #424d54 !important;
+	}
+}
+
+@media screen and (max-width:991px) {
+	.menu_open .menu_sm_inner {
+		height: 600px;
+	}
+	.wrap_service .service_title {
+		position: inherit;
+	}
+	.wrap_recruit .style1i_1 ul li,
+	.wrap_recruit .style1i_2 ul li,
+	.wrap_recruit .style1i_1 ul li:last-child {
+		width: 100%;
+	}
+	/* --------------------------- .Style Tuyển dụng*/
+}
+
+@media screen and (min-width: 768px) {
+	.flex_md_column_reverse {
+		flex-direction: column-reverse !important;
+	}
+	.hidden-sm {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 812px) {
+	.menu_open .menu_sm_inner {
+    height: 375px;
+    top: 0;
+    padding: 20px 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.menu_open .menu_sm_inner {
+		height: 1024px;
+		top: 0;
+		padding: 20px 0;
+	}
+	#wrap_about .wrap_content_1 {
+display: inline-block;
+    margin-top: 10%;
+    width: calc(100% - 0%);
+	}
+	#wrap_about .title_wrap p {
+		height: inherit !important;
+		overflow-y: inherit !important;
+	}
+	.wrap_bag_about {
+width: 100%;
+    position: initial;
+    padding: 0 15px;
+    margin-top: 60px;
+	}
+	.wrap_bag_about .stat_wrap {
+		right: 30px;
+width: 100%;
+position: initial;
+	}
+.stat_wrap li {
+float: left;
+    text-align: left;
+    width: 33.333%;
+}
+
+	.wrap_bag_about .stat_number {
+font-size: 28px;
+    width: fit-content;
+	}
+	.slider_events .img-wrap,
+	.slider_events .img {
+		width: 100%
+	}
+	#wrap_history{
+		min-height: inherit;
+	}
+	.slider_events .media_box {
+		display: inherit;
+	}
+	.slider_events .body_text {
+		padding: 0;
+		margin-top: 20px
+	}
+	.slider_events .date_more .button_Smore span {
+		margin: 10px 0 0 0;
+	}
+	.po_relative .slider_counter_1 {
+		    top: -73px;
+    right: 120px;
+    left: inherit;
+    font-size: 20px;
+	}
+	#wrap_news_events .owl-nav {
+		position: absolute;
+		top: -84px;
+		right: calc(0% - 0px);
+	}
+	.flex_md_column_reverse {
+		flex-direction: column-reverse !important;
+	}
+	#wrap_clients .container_lined {
+		display: none;
+	}
+	.align_items_start:before {
+		border-right: 1px solid #e5e5e5;
+		right: 0;
+		left: inherit !important;
+	}
+	.box_wrapper_1:before {
+		content: '';
+		border-left: 0 !important;
+	}
+	.width_80_right {
+		padding-left: 0;
+	}
+	.border_bottom:before {
+		width: 100%;
+	}
+	.wrap_link_page h4 {
+		padding: 0;
+	}
+	.container_lined {
+		display: none;
+	}
+	.bg_3 {
+    top: 40px;
+    right: 0;
+    width: 196px;
+    height: 240px;
+    background-size: cover;
+	}
+	.bg_4 {
+	    top: 40px;
+    right: 0;
+    width: 122px;
+    height: 240px;
+    background-size: cover;
+	}
+	.content .stat_wrap p {
+		width: 100%;
+	}
+	#sub_bg_area .logo_page span {
+		background-position: 1px 12px;
+	}
+	/* --------------------------- .Style Trang chủ */
+	.wrap_tab .nav-tabs li.active:after,
+	.wrap_tab .nav-tabs li:hover:after {
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+	}
+	.wrap_tab .nav-tabs li.active span {
+		color: #f7941d;
+		border: solid 1px #737373;
+	}
+	.nav-tabs.nav-tabs-dropdown,
+	.nav-tabs-dropdown {
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+	}
+	.nav-tabs.nav-tabs-dropdown::after,
+	.nav-tabs-dropdown::after {
+		content: "☰";
+		font-size: 22px;
+		position: absolute;
+		top: 0px;
+		right: 0;
+		z-index: 2;
+		pointer-events: none;
+		color: #f7941d;
+		border-left: solid 1px #737373;
+		width: 52px;
+		height: 52px;
+		line-height: 52px;
+	}
+	.nav-tabs.nav-tabs-dropdown::before {
+		content: "";
+		position: absolute;
+		top: 51px;
+		left: 0;
+		z-index: 11;
+		width: 100%;
+		border-top: solid 1px #737373;
+	}
+	.nav-tabs.nav-tabs-dropdown.open a,
+	.nav-tabs-dropdown.open a {
+		position: relative;
+		display: block;
+	}
+	.nav-tabs.nav-tabs-dropdown li,
+	.nav-tabs-dropdown li {
+		display: block;
+		vertical-align: bottom;
+		padding: 0;
+		float: none;
+		width: 100%;
+		background: #f3f3f3;
+	}
+	.wrap_tab {
+		border-bottom: 0;
+	}
+	.nav-tabs.nav-tabs-dropdown>li>a,
+	.nav-tabs-dropdown>li>a {
+		position: absolute;
+		top: 0;
+		left: 0;
+		margin: 0;
+		width: 100%;
+		height: 100%;
+		display: inline-block;
+		border-color: transparent;
+	}
+	.nav-tabs.nav-tabs-dropdown>li>a:focus,
+	.nav-tabs-dropdown>li>a:focus,
+	.nav-tabs.nav-tabs-dropdown>li>a:hover,
+	.nav-tabs-dropdown>li>a:hover,
+	.nav-tabs.nav-tabs-dropdown>li>a:active,
+	.nav-tabs-dropdown>li>a:active {
+		border-color: transparent;
+	}
+	.nav-tabs.nav-tabs-dropdown>li.active>a,
+	.nav-tabs-dropdown>li.active>a {
+		display: block;
+		position: relative;
+		z-index: 1;
+		color: #f7941d;
+	}
+	.nav-tabs.nav-tabs-dropdown>li.active>a:focus,
+	.nav-tabs-dropdown>li.active>a:focus,
+	.nav-tabs.nav-tabs-dropdown>li.active>a:hover,
+	.nav-tabs-dropdown>li.active>a:hover,
+	.nav-tabs.nav-tabs-dropdown>li.active>a:active,
+	.nav-tabs-dropdown>li.active>a:active {
+		border-color: transparent;
+	}
+	/* --------------------------- .Style tab menu */
+	.content .stat_wrap li {
+		width: calc(100% - 0px);
+    margin: 7.5px;
+	}
+	.wrap_company_value ul li:nth-child(2),
+	.wrap_company_value ul li:nth-child(3) {
+		width: 100%;
+		margin: -1px 0 0 0;
+	}
+	.wrap_company_value ul li:nth-child(3) {
+		margin-bottom: 30px;
+	}
+	.video_popup_1 .icon_autoplay_video {
+		position: absolute;
+		top: 68%;
+		left: 50%;
+		margin-left: -146px;
+	}
+	.video_popup_1[data-aos^=fade][data-aos^=fade].aos-animate .icon_autoplay_video {
+		transition-delay: 0.5s;
+		transform: scale(1.1);
+	}
+	.video_popup_1 .icon_autoplay_video {
+		position: absolute;
+		top: 50%;
+		margin-top: -33px;
+		left: initial;
+		right: 30px;
+		margin-left: inherit;
+	}
+	.video_popup_1 .box_content {
+		width: 100%;
+	}
+	.video_popup_1 .box_content h2,
+	.video_popup_1 .box_content p {
+		width: 50%;
+	}
+	/* --------------------------- .Style Giới thiệu */
+	.wrap_team_person .modal-body {
+		text-align: center;
+	}
+	.wrap_team_person .person-detail__info__img {
+		width: 50%;
+		float: none;
+		text-align: center;
+	}
+	.wrap_team_person .person-detail__info__body {
+		padding-left: 0;
+		float: left;
+		width: 100%
+	}
+	.team_content .owl-nav {
+		text-align: center;
+		border-top: solid 1px #737373;
+		margin-top: 30px;
+		padding-top: 20px;
+	}
+	.wrap_team .title_wrap {
+		padding: 0;
+	}
+	/* --------------------------- .Style Đội ngũ lãnh đạo */
+	.item_member,
+	.item_service {
+		margin-bottom: 50px;
+		border: solid 1px #dcdedf;
+		padding: 20px 0;
+		vertical-align: top;
+	}
+	.item_service .info .button_Smore {
+		position: absolute;
+		top: 0;
+		right: 30px;
+	}
+	/* --------------------------- .Style Công ty thành viên */
+	.pagination_container {
+		margin: 30px 0 60px;
+		border-bottom: solid 1px #737373;
+		width: 100%;
+		text-align: center;
+	}
+	.pagination {
+		display: inline-block;
+	}
+	.news_event_detail .social_share {
+		margin: 30px 0 60px;
+		padding-bottom: 20px;
+		border-bottom: solid 1px #737373;
+		width: 100%;
+	}
+	.docs-posts .img__thumb,
+	.docs-posts .media_right {
+		width: 100%;
+		float: none;
+		margin: 0;
+		padding: 0;
+	}
+	.docs-posts .img__thumb {
+		margin-bottom: 10px;
+	}
+	.hover_mask.docs-posts__item {
+		margin-bottom: 20px;
+	}
+	/* --------------------------- .Style Tin tức và sự kiện */
+	.col-lg-3 #sidebar2 {
+		display: none
+	}
+	#sidebar3.mobile-show {
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+	}
+	.position_f #sidebar3.mobile-show {
+		transition-delay: 1s;
+		transition: all 1s;
+		position: fixed;
+		z-index: 1;
+		background: #ddd;
+		top: 0;
+		width: 100%;
+	}
+	.nav-stacked {
+		margin: 30px 0 0 0;
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+		transition: all 1s;
+	}
+	.position_f .nav-stacked {
+		margin: 9px 0
+	}
+	.nav-stacked li {
+		width: initial;
+		text-align: center;
+		display: inline-block;
+		margin: 0;
+		padding: 10px;
+		border-bottom: 0;
+		vertical-align: top;
+	}
+	/* --------------------------- .Style QHCĐ */
+	.wrap_service .service_title {
+		position: inherit;
+	}
+	/* --------------------------- .Style Dịch vụ */
+	.wrap_recruit ul li {
+		width: 50%;
+	}
+	.wrap_recruit ul li:last-child {
+		width: 100%;
+	}
+	.item_service .info h3 {
+width: 70%;
+    display: inline-block;
+	}
+	/* --------------------------- .Style Tuyển dụng */
+	.form_Contact {
+		text-align: center;
+	}
+	.maps_contact h4 img {
+		left: 10px;
+	}
+	.maps_contact h4 {
+		padding-left: 50px;
+	}
+	/* --------------------------- .Style Liên hệ */
+	.fit-thumb img {
+		position: inherit;
+	}
+	.slider_events .fit-thumb {
+		padding-bottom: inherit;
+	}
+
+	.wrap_recruit_detail .col-sm-12.col-lg-6{
+		margin-bottom: 30px;
+	}
+
+	.wrap_recruit_detail .wrap-content{
+		position: inherit;
+		width: 100%;
+		left: 0
+	}
+
+	.style_service_info_1 ul li {
+		width: 100%
+	}
+
+	.listSof .item {
+		width: calc(50% - 60px);
+	}
+	
+	.item_width_5 .icon-TTHQ {
+		width: 80px;
+		height: 80px;
+	}
+	
+	.item_width_5:nth-child(2) .icon-TTHQ {
+		width: 80px;
+		height: 80px;
+		background-position: -80px 0;
+	}
+	
+	.item_width_5:nth-child(3) .icon-TTHQ {
+		width: 75px;
+		height: 80px;
+		background-position: -240px 0;
+	}
+	
+	.item_width_5:nth-child(4) .icon-TTHQ {
+		width: 73px;
+		height: 80px;
+		background-position: -241px 0;
+	}
+	
+	.item_width_5:nth-child(5) .icon-TTHQ {
+		width: 53px;
+		height: 80px;
+		background-position: right 0;
+	}
+	
+	.bag_opacity:after {
+    content: "";
+		top: -186px;
+	}
+	
+	.item_width_2 {
+		width: calc(50% - 33px);
+	}
+	
+	.why-me .item_width_2 {
+		width: calc(100% - 33px);
+	}
+	
+	.why-me .item_width_2 {
+		width: calc(100% - 33px);
+		margin: 15px;
+		display: inline-block;
+		background: #fff;
+		padding: 40px 30px;
+		text-align: left;
+		position: relative;
+		z-index: 1;
+	}
+	
+		
+	#sub_bg_area .title_page {
+		bottom: 13%;
+	}
+	
+	#sub_bg_area .title_page h4 {
+		font-size: 30px;
+	}
+		
+	.box-drop p{
+		text-align: center;
+		display: inline-block;
+		width: 100%;
+	}
+	
+	.box-drop a {
+		float: none;
+		display: inline-block;
+		margin-top: 20px;
+	}
+
+}/* ---------------------------*/
+@media screen and (max-width: 736px) {
+	.container {
+		max-width: 736px;
+	}
+	#wrap_about .wrap_content_1 {
+		width: 100%;
+	}
+	#wrap_about .col-sm-6 {
+		flex: 0 0 70%;
+		max-width: 70%;
+	}
+	.wrap_bag_about {
+		width: 30%;
+	}
+	.media_box .button_Smore {
+		float: right;
+	}
+	.menu_open .menu_sm_inner {
+    height: 414px;
+    top: 0;
+    padding: 20px 0;
+	}
+
+}/* ---------------------------*/
+
+@media screen and (max-width: 667px) {
+	.menu_open .menu_sm_inner {
+    height: 375px;
+    top: 0;
+    padding: 20px 0;
+	}
+
+}/* ---------------------------*/
+
+@media screen and (max-width: 480px) {
+	#banner-noel.show-bag{
+		height: auto;
+		background: url(../img/Banner_Noel.jpg) no-repeat center center;
+		background-size: cover;
+	}
+
+	.cloud-noel {
+		width: 140px;
+		height: 83px;
+		top: 0em;
+		right: -23%;
+	}
+
+	.airballoon1 {
+		width: 90px;
+		height: 84px;
+		top: 0;
+		right: 50%;
+	}
+
+	.airballoon2 {
+		width: 100px;
+		height: 100px;
+		top: 16px;
+		left: 64px;
+		margin-left: -25px;
+	}
+
+	.logo_load {
+		text-align: center;
+		width: 100%;
+		padding: 0;
+		-webkit-transform: translate3d(0, 100vh, 0);
+		-moz-transform: translate3d(0, 100vh, 0);
+		-o-transform: translate3d(0, 100vh, 0);
+		transform: translate3d(0, 100vh, 0);
+	}
+	.diary .logo_load {
+		transition-delay: 0.5s;
+		-moz-transform: translate3d(0, 0, 0);
+		-o-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+	.diary1 .logo_load {
+		-webkit-transform: translate3d(0, -100vh, 0);
+		-moz-transform: translate3d(0, -100vh, 0);
+		-o-transform: translate3d(0, -100vh, 0);
+		transform: translate3d(0, -100vh, 0);
+	}
+	.logo_load h3 {
+		font-size: 28px;
+	}
+	#line_load,
+	#line-UI {
+		bottom: -130vh;
+		right: -85vh;
+		height: auto;
+	}
+	.title_wrap h2,
+	.contact_service-title {
+		font-size: 22px;
+	}
+	.cd_section_onepage .title_wrap {
+		margin-bottom: 30px;
+	}
+	#line_load svg,
+	#line-UI svg {
+		width: 151vh;
+		height: 134vh;
+	}
+	.diary #line-UI {
+		display: none
+	}
+	#line_load {
+		bottom: -142vh;
+		right: -108vh;
+	}
+	#line_load svg {
+		width: 195vh;
+		height: 165vh;
+	}
+	.container {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.menu_col .nav-item-inner-heading {
+		font-size: 22px;
+	}
+	.nav-sub-item {
+		margin-bottom: 10px;
+	}
+	.nav-sub-item a {
+		font-size: 13px;
+	}
+	.bg_1 {
+		padding: 20px 30px;
+		height: 150px;
+	}
+	.wrap_logo a img {
+		width: 80px;
+	}
+	.wrap_logo a h4 {
+		margin-top: 6px;
+		font-size: 20px;
+	}
+	.content_title {
+		padding: 0 20px;
+		font-size: 13px;
+	}
+	.content_title h4 {
+		font-size: 22px;
+		line-height: inherit;
+	}
+	.slider_skew {
+		padding: 0 20px;
+	}
+	.gallery_item {
+		width: 50% !important;
+	}
+	.gallery_content {
+		height: 100% !important;
+	}
+	.cloud_2 {
+		width: 220px;
+		height: 61px;
+		top: 32px;
+	}
+	.bg_3 {
+		width: 155px;
+		height: 189px;
+	}
+	.bg_4 {
+		width: 96px;
+		height: 189px;
+	}
+	.no-touch #cd-vertical-nav {
+		display: none
+	}
+	#wrap_about .col-sm-6 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	#wrap_about .title_wrap h2 {
+		font-size: 22px;
+	}
+	#wrap_about .wrap_content_1 {
+		width: calc(100% - 0%);
+		position: relative;
+		z-index: 1;
+		margin-top: 15%;
+	}
+	.wrap_bag_about {
+		width: 100%;
+		position: inherit;
+	}
+	.wrap_bag_about .stat_wrap li {
+		width: 100%;
+		height: 72px;
+	}
+	.wrap_bag_about .stat_number {
+		width: fit-content;
+	}
+	.wrap_bag_about .stat_wrap li p {
+		    width: 100%;
+	}
+	#wrap_history {
+		padding-top: 60px !important
+	}
+	.horizontal-timeline .events-content li .item {
+		width: 100%;
+		padding: 0;
+	}
+	.title_wrap_ani hr,
+	.bag_ani_history,
+	.brand_ani_history,
+	.po_relative .slider_counter_1 {
+		display: none
+	}
+	.title_wrap_ani h2 {
+		font-size: 22px;
+		color: #f7941d;
+	}
+	.title_wrap_ani p {
+		font-size: 13px;
+		color: #000;
+	}
+	.slider_events .body_text i,
+	.slider_events .date_more .button_Smore span {
+		margin: 0;
+	}
+	#wrap_news_events {
+		margin: 50px 0;
+	}
+	#wrap_news_events .owl-nav {
+		top: -70px;
+	}
+	.bag_clients {
+		background: 0;
+	}
+	.flex_md_column_reverse {
+		flex-direction: inherit !important;
+	}
+	.box_grid_wrap .row>[class*="col"]:before {
+		border-left: 0;
+	}
+	.col-6.col-md-6.box_border:before,
+	.no-gutters {
+		border-left: 0;
+	}
+	.col-6.col-md-6.box_border:last-child:before {
+		border-left: 1px solid #e5e5e5;
+	}
+	.no-gutters .col-6.col-md-6.box_border:nth-child(1):before,
+	.no-gutters .col-6.col-md-6.box_border:nth-child(3):before {
+		border-left: 0;
+	}
+	.no-gutters .col-6.col-md-6.box_border:nth-child(2):before,
+	.no-gutters .col-6.col-md-6.box_border:nth-child(4):before {
+		border-left: 1px solid #e5e5e5;
+	}
+	.width_80_right .pull-left,
+	.width_80_right .pull-right {
+		width: 100%;
+		text-align: center;
+	}
+	.width_80_right .pull-right {
+		margin-top: 15px
+	}
+	.width_80_right .style_icon li,
+	.width_80_right h5 {
+		text-align: left
+	}
+	[data-aos^=fade][data-aos^=fade].aos-animate .bag_ani_footer {
+		left: -61%;
+		width: 50%;
+	}
+	[data-aos^=fade][data-aos^=fade].aos-animate .bottom_footer .bag_ani_footer {
+		display: none
+	}
+	footer .row.box_share {
+		margin-top: 0px;
+		display: inline-block;
+	}
+	.stat_wrap li p {
+		width: initial;
+	}
+	/* --------------------------- .Style Trang chủ */
+	#sub_bg_area .logo_page span {
+		background-position: 1px 25px;
+	}
+	#sub_bg_area .logo_page h4 {
+		padding: 20px 0 0px 30px;
+		font-size: 20px;
+	}
+	#sub_bg_area .logo_page i {
+		padding: 0 0 0 30px;
+	}
+
+	.title_slider {
+		padding: 15px 20px;
+	}
+	.video_popup_1 .box_content h2 {
+		font-size: 20px;
+	}
+	.video_popup_1 .box_content p {
+		display: none;
+	}
+	/* --------------------------- .Style Giới thiệu */
+	.item_service .info h3 {
+		width: 100%;
+	}
+	/* --------------------------- .Style Dich vu */
+	.team_box_content .team_box_50 {
+		width: 100%;
+	}
+	.team_box_content .team_box_50:last-child {
+		padding: 30px;
+	}
+	.wrap_team .title_wrap {
+		padding: 0
+	}
+	.nav-tabs.nav-tabs-dropdown>li>a,
+	.nav-tabs-dropdown>li>a {
+		text-align: left
+	}
+	.stat_number {
+		font-size: 20px;
+	}
+	.wrap_company_value ul li h5 {
+		font-size: 18px;
+	}
+	.wrap_leader .title_leader p {
+		font-size: 18px;
+		line-height: inherit;
+	}
+	/* --------------------------- .Style Đội ngũ lãnh đạo */
+	.wrap_member_companies ul li {
+		width: 100%;
+		margin-bottom: 5px
+	}
+	.wrap_member_companies ul li:last-child {
+		margin-bottom: 0px
+	}
+	.wrap_member_companies ul li span {
+		margin-right: 15px;
+	}
+	.wrap_company_value ul li h5:after {
+		height: 24px;
+		top: 0;
+	}
+	/* --------------------------- .Style Công ty thành viên */
+	.item_service .info .button_Smore {
+		position: relative;
+		right: inherit;
+	}
+	.wrap_news_event .full-box .body_content h4 {
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	/* --------------------------- .Style Dịch vụ */
+	.news_event_detail h4 {
+		font-size: 16px;
+	}
+	.news_event_detail .share .submenu li a i span {
+		display: none;
+	}
+	.wrap_service .service_title h4 {
+		font-size: 18px;
+		margin: 0
+	}
+	.wrap_service .service_title p {
+		letter-spacing: inherit;
+	}
+	/* --------------------------- .Style Tin tức và sự kiện */
+	.position_f .nav-stacked {
+		margin: 9px 0;
+		padding-left: 60px;
+		text-align: left;
+	}
+	.listPdf a,
+	.listPdf p {
+		width: 100%;
+	}
+	.partner_box .title_par a {
+		position: initial;
+		margin-top: 4px;
+		display: inherit;
+	}
+	.wrap_service .service_title {
+		padding: 10px 20px;
+	}
+	/* --------------------------- .Style QHCĐ */
+	.wrap_recruit ul li {
+		width: 100%;
+	}
+	.wrap_recruit_detail_popup {
+		padding: 30px 15px;
+	}
+	.wrap_recruit_detail ul li a span{
+		width: 100%;
+	}
+	.wrap_recruit_single .recruit_single_buuton li button,
+	.wrap_recruit_single .recruit_single_buuton li a {
+		height: 32px
+	}
+	.wrap_recruit_single .logo h4 {
+		font-size: 26px;
+	}
+	.wrap_recruit_single .recruit_single_buuton li {
+		padding: 6px 24px;
+		width: 49%;
+	}
+	.wrap_recruit_single .show_form_apply.open {
+		padding: 30px 16px;
+		max-height: 636px;
+	}
+	.wrap_recruit_single .recruit_single_infor .col-md-12 {
+		padding: 0
+	}
+	.recruit_detail .recruit_link_hover {
+		font-size: 16px;
+	}
+	/* --------------------------- .Style Tuyển dụng */
+	.maps_contact h4 img {
+		top: 4px
+	}
+	.maps_contact_member .panel-heading img {
+		top: 3px;
+	}
+	.maps_contact_member .style_icon li {
+		width: 100%;
+	}
+	#accordion .panel-heading .accordion-toggle.collapsed h4 {
+		font-size: 18px;
+	}
+	/* --------------------------- .Style Liên hệ */
+	.wrap_news_event .col-sm-12{
+		padding-left: 0;
+		padding-right: 0;	
+	}
+
+	.menu_align a {
+		margin-right: 15px;
+	}
+
+	.menu_align {
+		right: 0;
+	}
+
+	.listSof .item {
+		width: calc(100% - 0px);
+		margin: 0;
+	}
+
+	.listSof .item:last-child {
+		margin-top: 30px;
+	}
+
+	.style-css-2 .col-lg-4 .recent-posts__item {
+		vertical-align: top;
+		width: 100%;
+		margin: 0 0 30px 0;
+		display: inline-block;
+	}
+	
+	.item_width_5 {
+		width: calc(50% - 33px);
+	}
+	
+	.item_width_5 .icon-TTHQ {
+		width: 53px;
+		height: 53px;
+	}
+	
+	.item_width_5:nth-child(2) .icon-TTHQ {
+		width: 53px;
+		height: 53px;
+		background-position: -53px 0;
+	}
+	
+	.item_width_5:nth-child(3) .icon-TTHQ {
+		width: 53px;
+		height: 53px;
+		background-position: -106px 0;
+	}
+	
+	.item_width_5:nth-child(4) .icon-TTHQ {
+		width: 48px;
+		height: 53px;
+		background-position: -159px 0;
+	}
+
+	.item_width_5:nth-child(5) .icon-TTHQ {
+		width: 35px;
+		height: 53px;
+		background-position: -208px 0;
+	}
+	
+	#sub_bg_area .title_page h4 {
+		display: none
+	}
+	
+	.cd_section_onepage .item_width_2 {
+		width: calc(100% - 33px);
+	}
+	
+	.cd_section_onepage .title_wrap h3{
+		font-size: 22px;
+	}
+	
+	#sub_bg_area .title_page a {
+		padding: 10px;
+	}
+}
+@media screen and (max-width: 414px){
+	.menu_open .menu_sm_inner{
+		height: 700px;
+		top: 0;
+		padding: 20px 0;
+	}
+}
+
+@media screen and (max-width: 375px){
+	.menu_open .menu_sm_inner{
+		height: 667px;
+		top: 0;
+		left: 40px;
+		padding: 20px 0;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.menu_align a {
+    margin-right: 14px;
+	}
+}
+
+@media screen and (max-width: 320px) {}
