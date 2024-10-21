@@ -68,9 +68,9 @@ body.video_open {
     -webkit-transform: translate(-50%, -50%) rotate(58.5deg);
     -ms-transform: translate(-50%, -50%) rotate();
     transform: translate(-50%, -50%) rotate(58.5deg);
-    transition: height 1.5s cubic-bezier(0.55, 0.085, 0, 0.99);
-    transition: height 1.5s;
-    transition-delay: 0.5s;
+    transition: height 0.3s cubic-bezier(0.55, 0.085, 0, 0.99);
+    transition: height 0.3s;
+    transition-delay: 0.3s;
     background: #fff;
     width: 300%;
     height: 300%;
@@ -78,7 +78,7 @@ body.video_open {
 
 .diary1 .overly_load:after,
 .diary1 .bag_popup:after {
-    transition: all 0.6s;
+    transition: all 0.3s;
     transition-delay: 0.3s;
     height: 0;
     opacity: 0;
@@ -98,7 +98,7 @@ body.video_open {
     top: 50%;
     margin-top: -222px;
     left: 0;
-    transition: all 1s;
+    transition: all 0.5s;
     -webkit-transform: translate3d(-100vw, 0, 0);
     -moz-transform: translate3d(100vw, 0, 0);
     -o-transform: translate3d(100vw, 0, 0);
@@ -134,12 +134,12 @@ body.video_open {
 }
 
 .logo_load h3[data-aos^="fade"][data-aos^="fade"].aos-animate {
-    transition-delay: 1.2s;
+    transition-delay: 0.5s;
     transition-duration: 0.5s;
 }
 
 .logo_load p[data-aos^="fade"][data-aos^="fade"].aos-animate {
-    transition-delay: 1.4s;
+    transition-delay: 0.5s;
     transition-duration: 0.6s;
 }
 
