@@ -246,7 +246,7 @@ content: "";
     width: 150px;
     height: 110px;
     display: inline-block;
-    background: url(../img/logo_unilogistics.svg) no-repeat;
+    background: url(../img/background.png) no-repeat;
     background-size: contain;
 }
 
