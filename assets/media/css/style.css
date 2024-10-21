@@ -68,9 +68,9 @@ body.video_open {
     -webkit-transform: translate(-50%, -50%) rotate(58.5deg);
     -ms-transform: translate(-50%, -50%) rotate();
     transform: translate(-50%, -50%) rotate(58.5deg);
-    transition: height 0.3s cubic-bezier(0.55, 0.085, 0, 0.99);
-    transition: height 0.3s;
-    transition-delay: 0.3s;
+    transition: height 0.1s cubic-bezier(0.55, 0.085, 0, 0.99);
+    transition: height 0.1s;
+    transition-delay: 0.1s;
     background: #fff;
     width: 300%;
     height: 300%;
