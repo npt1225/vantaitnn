@@ -6,14 +6,15 @@
         padding-top: 60px;
         padding-left: 0;
     }
+    .menu-mobile{
+        display: none;
+    }
 }
 
-/* General container styles */
 .menu-container {
     position: relative;
 }
 
-/* Main dropdown menu */
 .custom-menu {
     list-style: none;
     padding: 0;
@@ -26,24 +27,24 @@
 
 
 
-/* Main submenu item styles */
+
 .custom-nav-sub-item,
 .custom-nav-sub-item-1 {
     position: relative;
     padding: 10px 0;
-    transition: margin-top 0.3s ease; /* Animation for hover */
+    transition: margin-top 0.3s ease; 
 }
 
-/* Popup submenus hidden initially */
+
 .custom-popup-submenu {
     display: none;
     list-style: none;
     padding: 10px;
-    background-color: #039a0f; /* Background color */
+    background-color: #039a0f; 
     border-radius: 5px;
     position: absolute;
     left: 0;
-    top: 40px; /* Display below parent */
+    top: 40px;
     width: 270px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 100;
@@ -58,18 +59,17 @@
     display: none;
     list-style: none;
     padding: 20px 0 20px 50px;
-    background-color: #039a0f; /* Background color */
+    background-color: #039a0f;
     border-radius: 5px;
     position: absolute;
     left: -20px;
-    top: 30px; /* Display below parent */
+    top: 30px; 
     width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 100;
     color: black!important;
 }
 
-/* Show popup-submenu on hover */
 .custom-nav-sub-item:hover .custom-popup-submenu {
     display: block;
 
@@ -93,68 +93,67 @@
 }
 
 
-/* Ensure proper spacing */
+
 .custom-nav-sub-item-1 {
-    margin-top: 30px; /* Initial gap */
+    margin-top: 30px; 
 }
 
-/* Hover effect to increase gap */
+
 .custom-nav-sub-item:hover + .custom-nav-sub-item-1 {
-    margin-top: 110px; /* Increased space on hover */
+    margin-top: 110px; 
 }
 
-/* Popup submenu for sub-items */
+
 .custom-popup-submenu-1 {
-    margin-top: 10px; /* Space from main submenu */
+    margin-top: 10px;
 }
 
 
 .nav-item-inner-heading:hover{
     background-color: #028a0d!important;
 }
-/* Configure nav-sub-list styles */
+
 .nav-sub-list {
     position: absolute;
-    width: 300px; /* Fixed width */
-    background-color: #039a0f; /* Background color */
-    top: 45px; /* Position */
-    left: -25px!important; /* Left position */
-    padding: 30px 20px; /* Inner padding */
-    border-radius: 10px; /* Rounded corners */
-    transition: all 0.8s ease; /* Transition effect */
-    height: auto; /* Allow height to expand */
+    width: 300px; 
+    background-color: #039a0f; 
+    top: 45px; 
+    left: -25px!important; 
+    padding: 30px 20px; 
+    border-radius: 10px; 
+    transition: all 0.8s ease; 
+    height: auto; 
     max-height: 900px;
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden; 
 }
 
 .nav-sub-list a{
     font-size: 18px;
 }
 .nav-item:hover .nav-sub-list {
-    max-height: 1000px; /* Allow to expand on hover */
-    overflow: visible; /* Allow overflow to be visible */
+    max-height: 1000px;
+    overflow: visible; 
 }
 
-/* Ensure proper spacing for sub-menu */
+
 .nav-sub-list li {
-    margin-bottom: 10px; /* Add some space between items */
+    margin-bottom: 10px; 
 }
 
-/* Ensure the nav-item expands height on hover */
 .nav-item:hover .nav-sub-list {
-    height: auto; /* Expand height */
+    height: auto; 
 }
 .custom-nav-sub-item-1:hover .nav-sub-list {
-    height: 900px!important; /* Expand height */
+    height: 900px!important;
 }
 
-/* Popup submenu styling */
+
 .popup-submenu-1 {
-    display: none; /* Initially hidden */
+    display: none; 
     position: absolute;
-    top: 20px; /* Position to the right of the parent item */
-    left: 200px; /* Position */
-    width: 450px; /* Width of the submenu */
+    top: 20px; 
+    left: 200px;
+    width: 450px; 
     background-color: #039a0f;
     border: 1px solid #ccc;
     padding: 10px;
@@ -162,85 +161,85 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Show submenu on hover */
+
 .nav-sub-item-1:hover .popup-submenu-1 {
-    display: block; /* Show submenu */
+    display: block; 
 }
 
-/* Maintain submenu visibility on hover */
+
 .popup-submenu-1:hover {
-    display: block; /* Keep submenu visible */
+    display: block; 
 }
 
-/* Hover area for better UX */
+
 .hover-area {
     position: absolute;
     top: 0;
-    left: 450px; /* Adjust to position */
-    width: 200px; /* Width for hover area */
-    height: 100%; /* Full height */
-    z-index: 100; /* Lower than submenu */
+    left: 450px; 
+    width: 200px; 
+    height: 100%; 
+    z-index: 100; 
 }
 
-/* Show submenu and hover area */
+
 .nav-sub-item-1:hover .popup-submenu-1,
 .nav-sub-item-1:hover .hover-area,
 .popup-submenu-1:hover,
 .hover-area:hover {
-    display: block; /* Show both */
+    display: block; 
 }
 
-/* Adjust font size for sub-items */
+
 .nav-sub-item-1 {
     font-size: 18px;
 }
 
-/* Submenu link styles */
+
 .popup-submenu-1 li {
     list-style: none;
     padding: 5px 0;
 }
 
 .popup-submenu-1 a {
-    color: #fff; /* Text color */
+    color: #fff; 
     text-decoration: none;
-    display: block; /* Block display */
-    padding: 5px 15px; /* Padding */
-    transition: background-color 0.3s, color 0.3s; /* Transition effects */
+    display: block; 
+    padding: 5px 15px; 
+    transition: background-color 0.3s, color 0.3s; 
 }
 
-/* Hover effect for submenu links */
+
 .popup-submenu-1 a:hover {
-    background-color: #028a0d; /* Hover background color */
-    color: #ffffff; /* Hover text color */
-    border-radius: 5px; /* Rounded corners */
+    background-color: #028a0d; 
+    color: #ffffff; 
+    border-radius: 5px; 
 }
 
-/* Position adjustments */
+
 .nav-sub-item-1 {
-    position: relative; /* Necessary for absolute positioning */
+    position: relative; 
 }
 
-/* Optional padding and margins */
+
 .nav-sub-item-1 > a {
-    padding: 10px 0; /* Padding */
-    display: inline-block; /* Block display */
+    padding: 10px 0; 
+    display: inline-block; 
 }
 
-/* Floating buttons styling */
+
 .floating-buttons {
     position: fixed;
     bottom: 85px;
     right: 22px;
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Space between buttons */
-    z-index: 9999; /* Ensure on top */
+    gap: 10px; 
+    z-index: 9999; 
 }
 
-/* Additional part for Part 1 */
+
 .custom-nav-sub-item-1 {
-    margin-top: 30px; /* Initial gap */
+    margin-top: 30px; 
 }
 
 
@@ -248,23 +247,23 @@
 
 
 
-/* Main button styling */
+
 .main-button {
-    background-color: #039a0f; /* Main button background color */
-    color: #fff; /* Main button icon color */
-    border-radius: 50%; /* Circular shape */
-    width: 60px; /* Button width */
-    height: 60px; /* Button height */
+    background-color: #039a0f; 
+    color: #fff; 
+    border-radius: 50%; 
+    width: 60px; 
+    height: 60px; 
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-size: 24px; /* Icon size */
+    font-size: 24px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    animation: bounce 2s infinite; /* Add bounce animation */
+    animation: bounce 2s infinite; 
 }
 
-/* Keyframes for bouncing animation */
+
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
@@ -277,38 +276,36 @@
     }
 }
 
-/* Additional buttons styling */
 .hidden-buttons {
-    display: flex; /* Change to flex to align buttons properly */
-    flex-direction: column; /* Arrange vertically */
-    align-items: flex-end; /* Align items to the right */
-    gap: 10px; /* Space between hidden buttons */
-    opacity: 0; /* Initially hidden */
-    transform: scale(0); /* Scale down */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Transition for visibility */
-    pointer-events: none; /* Prevent interaction when hidden */
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-end; 
+    gap: 10px; 
+    opacity: 0; 
+    transform: scale(0); 
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+    pointer-events: none; 
 }
 
-/* Call button styling */
+
 .call-button,
 .zalo-button,
 .facebook-button {
-    position: relative; /* Make this the reference for the pseudo-element */
-    background-color: #039a0f; /* Button background color */
-    color: #fff; /* Icon color */
-    border-radius: 50%; /* Circular buttons */
-    width: 60px; /* Button width */
-    height: 60px; /* Button height */
+    position: relative; 
+    background-color: #039a0f; 
+    color: #fff; 
+    border-radius: 50%; 
+    width: 60px; 
+    height: 60px; 
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-size: 24px; /* Icon size */
+    font-size: 24px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Animate transform and opacity */
+    transition: transform 0.3s ease, opacity 0.3s ease; 
 }
 
-/* Circle effect for call button */
 .call-button::before,
 .zalo-button::before,
 .facebook-button::before {
@@ -317,29 +314,29 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: 4px solid rgba(255, 255, 255, 0.5); /* Circle border color */
-    animation: scale-circle 2s infinite; /* Circle animation */
-    opacity: 0.5; /* Circle opacity */
+    border: 4px solid rgba(255, 255, 255, 0.5); 
+    animation: scale-circle 2s infinite; 
+    opacity: 0.5; 
     top: 0;
     left: 0;
 }
 
-/* Circle scaling animation */
+
 @keyframes scale-circle {
     0% {
-        transform: scale(0.5); /* Start smaller */
+        transform: scale(0.5); 
     }
     50% {
-        transform: scale(1.2); /* Scale up */
+        transform: scale(1.2); 
     }
     100% {
-        transform: scale(0.5); /* Scale back down */
+        transform: scale(0.5); 
     }
 }
 
-/* Show the additional buttons when activated */
+
 .show {
-    opacity: 1; /* Make buttons visible */
-    transform: scale(1); /* Scale to original size */
-    pointer-events: auto; /* Enable interaction */
+    opacity: 1; 
+    transform: scale(1); 
+    pointer-events: auto; 
 }
