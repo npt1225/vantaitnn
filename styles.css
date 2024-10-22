@@ -2,14 +2,19 @@
     .nav-home {
         display: none;
     }
+    .menu_sm_inner .row{
+        padding-top: 60px;
+        padding-left: 0;
+    }
 }
+
 /* General container styles */
 .menu-container {
     position: relative;
 }
 
 /* Main dropdown menu */
-.nav-list {
+.custom-menu {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -19,157 +24,229 @@
     position: relative;
 }
 
-.nav-sub-list {
+
+
+/* Main submenu item styles */
+.custom-nav-sub-item,
+.custom-nav-sub-item-1 {
+    position: relative;
+    padding: 10px 0;
+    transition: margin-top 0.3s ease; /* Animation for hover */
+}
+
+/* Popup submenus hidden initially */
+.custom-popup-submenu {
+    display: none;
+    list-style: none;
+    padding: 10px;
+    background-color: #039a0f; /* Background color */
+    border-radius: 5px;
     position: absolute;
-    background-color: #039a0f;
-    width: 330px;
-    padding: 30px;
-    top: 53px;
-    left: 2px;
-    border-radius: 10px;
+    left: 0;
+    top: 40px; /* Display below parent */
+    width: 270px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 100;
 }
-
-.nav-sub-item {
-    position: relative;
+.custom-popup-submenu a {
+    font-size: 13px!important;
 }
-
-/* Submenu popup */
-.popup-submenu {
-    display: none; /* Hidden by default */
-    position: absolute;
-    top: 10px;
-    left: 274px;/* Position to the right of the parent item */
-    width: 350px;
-    background-color: #039a0f;
-    border: 1px solid #ccc;
-    padding: 10px;
+.custom-popup-submenu-1 a {
+    font-size: 13px!important;
+}
+.custom-popup-submenu-1 {
+    display: none;
+    list-style: none;
+    padding: 20px 0 20px 50px;
+    background-color: #039a0f; /* Background color */
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    z-index: 200;
-}
-.item-sub{
-    color: black;
+    position: absolute;
+    left: -20px;
+    top: 30px; /* Display below parent */
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    color: black!important;
 }
 
-/* Show the sub-list when hovering over the main item */
-.nav-item:hover .nav-sub-list {
+/* Show popup-submenu on hover */
+.custom-nav-sub-item:hover .custom-popup-submenu {
     display: block;
-}
 
-.hover-dichvu:hover{
-     background-color: transparent!important;
 }
-/* Show the popup submenu only when hovering over the text link */
-.nav-sub-item a:hover + .popup-submenu {
-    display: block;
+.custom-nav-sub-item a:hover{
+   color: #f7941d;
 }
-
-/* Link styling */
-.nav-sub-list a, .popup-submenu a {
+.custom-nav-sub-item a{
     color: #fff;
-    text-decoration: none;
-    padding: 5px 0;
+}
+.custom-nav-sub-item-1 a{
+    color: #fff;
+}
+
+.custom-nav-sub-item-1 a:hover{
+    color: #f7941d;
+ }
+ 
+.custom-nav-sub-item-1:hover .custom-popup-submenu-1 {
     display: block;
 }
 
-.nav-sub-list a:hover, .popup-submenu a:hover {
-    background-color: transparent;
-    color: #f7941d;
+
+/* Ensure proper spacing */
+.custom-nav-sub-item-1 {
+    margin-top: 30px; /* Initial gap */
+}
+
+/* Hover effect to increase gap */
+.custom-nav-sub-item:hover + .custom-nav-sub-item-1 {
+    margin-top: 110px; /* Increased space on hover */
+}
+
+/* Popup submenu for sub-items */
+.custom-popup-submenu-1 {
+    margin-top: 10px; /* Space from main submenu */
+}
+
+
+.nav-item-inner-heading:hover{
+    background-color: #028a0d!important;
+}
+/* Configure nav-sub-list styles */
+.nav-sub-list {
+    position: absolute;
+    width: 300px; /* Fixed width */
+    background-color: #039a0f; /* Background color */
+    top: 45px; /* Position */
+    left: -25px!important; /* Left position */
+    padding: 30px 20px; /* Inner padding */
+    border-radius: 10px; /* Rounded corners */
+    transition: all 0.8s ease; /* Transition effect */
+    height: auto; /* Allow height to expand */
+    max-height: 900px;
+    overflow: hidden; /* Hide overflow */
+}
+
+.nav-sub-list a{
+    font-size: 18px;
+}
+.nav-item:hover .nav-sub-list {
+    max-height: 1000px; /* Allow to expand on hover */
+    overflow: visible; /* Allow overflow to be visible */
+}
+
+/* Ensure proper spacing for sub-menu */
+.nav-sub-list li {
+    margin-bottom: 10px; /* Add some space between items */
+}
+
+/* Ensure the nav-item expands height on hover */
+.nav-item:hover .nav-sub-list {
+    height: auto; /* Expand height */
+}
+.custom-nav-sub-item-1:hover .nav-sub-list {
+    height: 900px!important; /* Expand height */
 }
 
 /* Popup submenu styling */
 .popup-submenu-1 {
     display: none; /* Initially hidden */
     position: absolute;
-    top: 0;
-    left: 274px; /* Position to the right of the parent item */
+    top: 20px; /* Position to the right of the parent item */
+    left: 200px; /* Position */
     width: 450px; /* Width of the submenu */
     background-color: #039a0f;
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 200;
 }
 
-/* Show submenu when hovering over "Vận Chuyển Tiểu Ngạch" */
+/* Show submenu on hover */
 .nav-sub-item-1:hover .popup-submenu-1 {
     display: block; /* Show submenu */
 }
 
 /* Maintain submenu visibility on hover */
 .popup-submenu-1:hover {
-    display: block; /* Keep submenu visible while hovering over it */
+    display: block; /* Keep submenu visible */
 }
 
-/* Adding a hover area for better UX */
+/* Hover area for better UX */
 .hover-area {
     position: absolute;
     top: 0;
-    left: 450px; /* Adjust this to position next to the submenu */
-    width: 200px; /* Width for the hover area */
-    height: 100%; /* Full height of the submenu */
-    z-index: 100; /* Lower than the submenu */
+    left: 450px; /* Adjust to position */
+    width: 200px; /* Width for hover area */
+    height: 100%; /* Full height */
+    z-index: 100; /* Lower than submenu */
 }
 
-/* Show the hover area */
+/* Show submenu and hover area */
 .nav-sub-item-1:hover .popup-submenu-1,
 .nav-sub-item-1:hover .hover-area,
 .popup-submenu-1:hover,
 .hover-area:hover {
-    display: block; /* Show submenu and hover area */
+    display: block; /* Show both */
 }
 
+/* Adjust font size for sub-items */
 .nav-sub-item-1 {
     font-size: 18px;
 }
-/* Show the submenu when hovering over "Vận Chuyển Tiểu Ngạch" */
-.nav-sub-item-1:hover .popup-submenu-1 {
-    display: block;
-}
 
-/* Style for the submenu links */
+/* Submenu link styles */
 .popup-submenu-1 li {
     list-style: none;
     padding: 5px 0;
 }
 
 .popup-submenu-1 a {
-    color: #fff;
+    color: #fff; /* Text color */
     text-decoration: none;
-    display: block;
-    padding: 5px 15px;
-    transition: background-color 0.3s, color 0.3s;
+    display: block; /* Block display */
+    padding: 5px 15px; /* Padding */
+    transition: background-color 0.3s, color 0.3s; /* Transition effects */
 }
 
 /* Hover effect for submenu links */
 .popup-submenu-1 a:hover {
-    background-color: #028a0d;
-    color: #ffffff;
-    border-radius: 5px;
+    background-color: #028a0d; /* Hover background color */
+    color: #ffffff; /* Hover text color */
+    border-radius: 5px; /* Rounded corners */
 }
 
-/* Position adjustments to ensure proper alignment */
+/* Position adjustments */
 .nav-sub-item-1 {
-    position: relative; /* Needed for absolute positioning of the submenu */
+    position: relative; /* Necessary for absolute positioning */
 }
 
-/* Optional: Adjust padding and margins for better visual hierarchy */
+/* Optional padding and margins */
 .nav-sub-item-1 > a {
-    padding: 10px 0;
-    display: inline-block;
+    padding: 10px 0; /* Padding */
+    display: inline-block; /* Block display */
 }
 
+/* Floating buttons styling */
 .floating-buttons {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 85px;
+    right: 22px;
     display: flex;
     flex-direction: column;
     gap: 10px; /* Space between buttons */
-    z-index: 9999; /* Ensures buttons are on top */
+    z-index: 9999; /* Ensure on top */
 }
+
+/* Additional part for Part 1 */
+.custom-nav-sub-item-1 {
+    margin-top: 30px; /* Initial gap */
+}
+
+
+
+
+
 
 /* Main button styling */
 .main-button {
