@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Sending Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-row {
+            margin-bottom: 15px;
+        }
+        .form-row label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-row input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .submit-btn {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h3>Gửi Email</h3>
+    <div id="success"></div>
+    <form id="emailForm">
+        <div class="form-row">
+            <label for="username">Tên người dùng:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-row">
+            <label for="recaptcha">Captcha:</label>
+            <input type="text" id="recaptcha" name="g-recaptcha-response" placeholder="Nhập captcha ở đây" required>
+        </div>
+        <button type="submit" class="submit-btn">Gửi Email</button>
+    </form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $('#emailForm').on('submit', function(event) {
+        event.preventDefault(); // Ngăn chặn việc gửi form mặc định
+
+        var data = {
+            service_id: 'service_rxt7mr7', // Thay thế YOUR_SERVICE_ID bằng ID dịch vụ của bạn
+            template_id: 'template_rla2cbq', // Thay thế YOUR_TEMPLATE_ID bằng ID mẫu của bạn
+            user_id: 'KUBfXmAZmudBXBY7a', // Thay thế YOUR_PUBLIC_KEY bằng khóa công khai của bạn
+            template_params: {
+                'username': $('#username').val(),
+                'g-recaptcha-response': $('#recaptcha').val()
+            }
+        };
+
+        $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+            type: 'POST',
+            data: JSON.stringify(data),
+            contentType: 'application/json'
+        }).done(function() {
+            alert('Your mail is sent!');
+        }).fail(function(error) {
+            alert('Oops... ' + JSON.stringify(error));
+        });
+    });
+</script>
+
+</body>
+</html>

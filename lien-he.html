@@ -45,6 +45,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-206852202-1"></script>
     <script>
@@ -384,67 +386,69 @@
                     </div>
                     <div class="col-md-6">
 
-                        <form action="/vi/Message/Create" class="reply-form form_container" id="myForm" method="post">
+                        <form action="" class="reply-form form_container" id="myForm" method="post">
                             <div id="success"></div>
-                            <h3>Đăng k&#253; nhận tư vấn</h3>
+                            <h3>Đăng ký nhận tư vấn</h3>
+                        
                             <div class="form_row">
                                 <div class="padding_20">
                                     <input autocomplete="off" class="form_textbox" data-val="true"
                                         data-val-length="The field Họ tên must be a string with a maximum length of 250."
-                                        data-val-length-max="250" id="Name" name="Name" required="required" type="text"
-                                        value="" />
-                                    <label class="form_label" for="Name">Họ t&#234;n</label>
+                                        data-val-length-max="250" id="Name" name="Name" required="required" type="text" />
+                                    <label class="form_label" for="Name">Họ tên</label>
                                     <span class="field-validation-valid text-danger" data-valmsg-for="Name"
                                         data-valmsg-replace="true"></span>
                                 </div>
                             </div>
+                        
                             <div class="form_row">
                                 <div class="padding_20">
                                     <input autocomplete="off" class="form_textbox" data-val="true"
                                         data-val-length="The field Email must be a string with a maximum length of 320."
                                         data-val-length-max="320" id="Email" name="Email" required="required"
-                                        type="email" value="" />
+                                        type="email" />
                                     <label class="form_label" for="Email">Email</label>
                                     <span class="field-validation-valid text-danger" data-valmsg-for="Email"
                                         data-valmsg-replace="true"></span>
                                 </div>
                             </div>
+                        
                             <div class="form_row">
                                 <div class="padding_20">
                                     <input autocomplete="off" class="form_textbox" data-val="true"
                                         data-val-length="The field Số điện thoại must be a string with a maximum length of 15."
-                                        data-val-length-max="15" id="Phone" name="Phone" required="required" type="text"
-                                        value="" />
+                                        data-val-length-max="15" id="Phone" name="Phone" required="required" type="text" />
                                     <label class="form_label" for="Phone">Số điện thoại</label>
                                     <span class="field-validation-valid text-danger" data-valmsg-for="Phone"
                                         data-valmsg-replace="true"></span>
                                 </div>
                             </div>
+                        
                             <div class="form_row">
                                 <div class="padding_20">
                                     <input autocomplete="off" class="form_textbox" data-val="true"
                                         data-val-length="The field Tên doanh nghiệp must be a string with a maximum length of 250."
                                         data-val-length-max="250" id="Company" name="Company" required="required"
-                                        type="text" value="" />
-                                    <label class="form_label" for="Company">T&#234;n doanh nghiệp</label>
+                                        type="text" />
+                                    <label class="form_label" for="Company">Tên doanh nghiệp</label>
                                     <span class="field-validation-valid text-danger" data-valmsg-for="Company"
                                         data-valmsg-replace="true"></span>
                                 </div>
                             </div>
+                        
                             <div class="form_row">
                                 <div class="padding_20">
                                     <div class="dropdown">
                                         <button id="dLabel" class="dropdown-select" type="button" data-toggle="dropdown"
                                             aria-haspopup="true" aria-expanded="false">
-                                            Bạn quan t&#226;m đến dịch vụ n&#224;o sau đ&#226;y?
+                                            Bạn quan tâm đến dịch vụ nào sau đây?
                                         </button>
                                         <span class="caret"></span>
                                         <ul class="dropdown-menu contact" aria-labelledby="dLabel">
-                                            <li data-service="1">Đại l&#253; thủ tục hải quan</li>
-                                            <li data-service="2">Kho vận v&#224; ph&#226;n phối h&#224;ng h&#243;a</li>
+                                            <li data-service="1">Đại lý thủ tục hải quan</li>
+                                            <li data-service="2">Kho vận và phân phối hàng hóa</li>
                                             <li data-service="3">Vận tải</li>
-                                            <li data-service="5">Vận tải đường biển v&#224; h&#224;ng kh&#244;ng quốc tế
-                                            </li>
+                                            <li data-service="5">Vận tải đường biển và hàng không quốc tế</li>
                                             <li data-service="0">Tất cả dịch vụ</li>
                                         </ul>
                                         <input data-val="true"
@@ -453,19 +457,21 @@
                                     </div>
                                 </div>
                             </div>
+                        
                             <div class="form_row">
                                 <textarea class="form_textbox" cols="20" data-val="true"
                                     data-val-required="Yêu cầu không được để trống" id="Content" name="Content"
-                                    required="required" rows="4">
-</textarea>
-                                <label class="form_label" for="Content">Y&#234;u cầu</label>
+                                    required="required" rows="4"></textarea>
+                                <label class="form_label" for="Content">Yêu cầu</label>
                                 <span class="field-validation-valid text-danger" data-valmsg-for="Content"
                                     data-valmsg-replace="true"></span>
                             </div>
+                        
                             <div class="button_Smore btn_submit" id="btn-send-contact">
-                                <span><input type="button" onclick="sendMessage();" name="" value="Gửi"></span>
+                                <span><input type="button" onclick="sendMessage();" value="Gửi"></span>
                             </div>
                         </form>
+                        
                     </div>
                 </div>
             </div>
@@ -750,6 +756,8 @@
             <i class="fas fa-plus"></i> <!-- Main button icon -->
         </a>
     </div>
+   
+   
     <script>
         const mainButton = document.querySelector('.main-button');
         const hiddenButtons = document.querySelector('.hidden-buttons');
@@ -790,6 +798,44 @@
 
     <script
     type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "66abef50-3cb4-4ade-99f4-9317be87ad2e"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
+    <script>
+        function sendMessage() {
+    // Lấy dữ liệu từ các trường trong biểu mẫu
+    var name = document.getElementById('Name').value;
+    var email = document.getElementById('Email').value;
+    var phone = document.getElementById('Phone').value;
+    var company = document.getElementById('Company').value;
+    var serviceID = document.getElementById('ServiceID').value;
+    var content = document.getElementById('Content').value;
+
+    // Tạo đối tượng dữ liệu cho EmailJS
+    var data = {
+        service_id: 'service_rxt7mr7', // Thay thế YOUR_SERVICE_ID bằng ID dịch vụ của bạn
+            template_id: 'template_rla2cbq', // Thay thế YOUR_TEMPLATE_ID bằng ID mẫu của bạn
+            user_id: 'KUBfXmAZmudBXBY7a', // Thay thế YOUR_PUBLIC_KEY bằng khóa công khai của bạn
+        template_params: {
+            'username': name,
+            'email': email,
+            'phone': phone,
+            'company': company,
+            'service_id': serviceID,
+            'content': content
+        }
+    };
+
+    // Gửi yêu cầu đến EmailJS
+    $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+        type: 'POST',
+        data: JSON.stringify(data),
+        contentType: 'application/json'
+    }).done(function() {
+        swal("Thành công!", "Email của bạn đã được gửi thành công! Chúng tôi sẽ phản hồi bạn trong thời gian sớm nhất", "success");
+        document.getElementById('myForm').reset(); // Reset biểu mẫu sau khi gửi
+    }).fail(function(error) {
+        alert('Đã xảy ra lỗi: ' + JSON.stringify(error));
+    });
+}
+    </script>
     <script>
         $('.dropdown-menu li').on('click', function () {
             var getValue = $(this).text();
