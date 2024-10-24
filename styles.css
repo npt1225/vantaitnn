@@ -340,3 +340,10 @@
     transform: scale(1); 
     pointer-events: auto; 
 }
+
+.text-style{
+    color: #232331;
+    font-family: san_francisco_textbold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
