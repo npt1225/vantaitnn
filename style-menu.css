@@ -1,6 +1,6 @@
 .custom-menu-container {
     display: flex;
-    gap: 35px;
+    gap: 20px;
     margin-left: 60px;
 }
 
@@ -176,24 +176,4 @@ ul {
 
 li {
     margin-bottom: 10px; /* Add spacing between each list item */
-}
-.overly_load:after {
-    position: absolute; /* Ensure it overlays */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999; /* Ensure it appears above other elements */
-    display: block; /* Ensures it's visible */
-}
-
-.bag_popup:after {
-    position: absolute;
-    top: 28px;
-    left: 0;
-    width: 1%;
-    height: 100%;
-    /* background: rgba(0, 0, 0, 0.5); */
-    z-index: 999;
-    display: block;
 }
