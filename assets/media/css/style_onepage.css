@@ -8,29 +8,28 @@
     transition-delay: 1.5s;
 }
 
-.bag_popup:after{
+/* .bag_popup:after{
     height: 0;
     transition-delay: 0.3s;
-}
+} */
 
-.menu_open .bag_popup:after{
+/* .menu_open .bag_popup:after{
     transition-delay: 0.3s;
-}
+} */
 
 .box_global_lang .edd-root {
 	margin-left: 0px;
 }
 
-.menu_align {
+/* .menu_align {
     left: initial;
     right: 30px;
     transition: all 0.5s;
     transition-delay: 0.5s;
-}
+} */
 
 .box_global_lang .fa,
-.edd-value,
-.menu_align a{
+.edd-value{
        color: #424d54;
 }
 
@@ -109,9 +108,9 @@
 	margin-bottom: 60px;
 }
 
-.menu_align a {
+/* .menu_align a {
     color: #424d54
-}
+} */
 
 .title_slider ul li {
 	float: left;
@@ -195,7 +194,7 @@ content: "";
     position: relative;
 }
 
-.sub_bg:after{
+/* .sub_bg:after{
     content: "";
     width: 100%;
     height: 100%;
@@ -207,9 +206,9 @@ content: "";
     background: -o-radial-gradient(circle at 11% 28%, rgba(255, 255, 255, 0.83) 0%, rgba(255, 255, 255, 0) 41%);
     background: -ms-radial-gradient(circle at 11% 28%, rgba(255, 255, 255, 0.83) 0%, rgba(255, 255, 255, 0) 41%);
     background: radial-gradient(circle at 6% -15%, rgb(255 255 255) 14%, rgb(255 255 255 / -6%) 38%);
-}
+} */
 
-#sub_bg_area .logo_page,
+/* #sub_bg_area .logo_page,
 #sub_bg_area .title_page{
 	position: absolute;
 	z-index: 1;
@@ -221,12 +220,12 @@ content: "";
 	-moz-transform: translate3d(-100vw,0,0);
 	-o-transform: translate3d(-100vw,0,0);
 	transform: translate3d(-100vw,0,0);
-}
+} */
 
-#sub_bg_area .title_page{
+/* #sub_bg_area .title_page{
 	top: inherit;
 	bottom: 36%
-}
+} */
 
 #sub_bg_area.show-logo .logo_page,
 #sub_bg_area.show-logo1 .logo_page,
@@ -238,13 +237,13 @@ content: "";
 	transform: translate3d(6.3vw,0,0);
 }
 
-#sub_bg_area .logo_page img {
+/* #sub_bg_area .logo_page img {
 	width: 150px;
-}
+} */
 
 #sub_bg_area .logo_page span {
     width: 150px;
-    height: 110px;
+    height: 150px;
     display: inline-block;
     background: url(../img/bg-tnn.png) no-repeat;
     background-size: contain;
@@ -3856,11 +3855,11 @@ color: #ffffff;
 		right: inherit;
 		left: 30px;
 	}
-	#section1 {
+	/* #section1 {
 		height: 61px;
     border-bottom: solid 1px #ddd;
     background: #fff;
-	}
+	} */
 	.line_menu {
 		background-color: #fff;
 	}
@@ -4234,7 +4233,7 @@ content: "";
 }
 
 #section1 {
-    background-color: #fff;
+    background-color: #039a0f!important;
 }
 
 .load-item {
