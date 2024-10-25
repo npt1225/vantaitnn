@@ -1,0 +1,199 @@
+.custom-menu-container {
+    display: flex;
+    gap: 35px;
+    margin-left: 60px;
+}
+
+.custom-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-nav-item {
+    position: relative;
+}
+.custom-menu-container{
+    background-color: green;
+}
+
+.custom-nav-item a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+.custom-nav-link {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+    /* Animate text color */
+    display: flex;
+    align-items: center;
+    padding: 14px 20px;
+    /* Added padding for better spacing */
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+.custom-nav-link:hover {
+    color: orange;
+    /* Change text color to orange on hover */
+}
+
+.custom-nav-item:hover>.custom-nav-link {
+    color: orange;
+    /* Change parent link color on hover */
+}
+
+.submenu-icon {
+    margin-left: 5px;
+    transition: transform 0.3s, margin-left 0.3s;
+    /* Add margin left transition */
+}
+
+.custom-nav-item:hover .submenu-icon {
+    transform: rotate(-180deg);
+    /* Rotates arrow upwards on hover */
+    margin-left: 10px;
+    /* Move the icon to the right */
+}
+
+.custom-submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    /* Slight downward shift on hidden */
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 1000;
+    background-color: green;
+    /* Background color for submenu */
+    border-radius: 5px;
+    width: 320px;
+    /* Fixed width for submenu */
+}
+
+.custom-nav-item:hover .custom-submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    /* Move up when visible */
+}
+
+.submenu-icon-1 {
+    margin-left: 5px;
+    transition: transform 0.3s, margin-left 0.3s;
+    /* Add margin left transition */
+}
+
+.custom-submenu-item a:hover> .custom-popup-submenu {
+    color: orange;
+}
+
+.custom-submenu-item:hover .submenu-icon-1 {
+    transform: rotate(-90deg);
+    /* Rotates arrow upwards on hover */
+    margin-left: 10px;
+    /* Move the icon to the right */
+}
+
+.custom-submenu-item {
+    margin: 10px 0;
+    /* Padding for submenu items */
+}
+
+.custom-submenu-item a {
+    color: white;
+    /* White text for submenu */
+    font-size: 18px;
+    /* Font size for submenu */
+    text-decoration: none;
+    display: block;
+    /* Make the link fill the area */
+    transition: background-color 0.3s;
+    /* Smooth background color transition */
+    padding: 10px 15px;
+    /* Padding for submenu links */
+}
+
+.custom-submenu-item a:hover {
+    background-color: rgba(160, 9, 9, 0.2);
+    /* Light background on hover */
+}
+
+.custom-popup-submenu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 18px;
+    left: 100%;
+    /* Show to the right of the submenu */
+    background-color: green;
+    /* Maintain the same background color */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    z-index: 1000;
+    width: 300px;
+}
+
+.custom-popup-item {
+    text-decoration: none;
+    color: #fff;
+    /* White text for popup items */
+    padding: 10px 15px;
+    display: block;
+    /* Make the link fill the area */
+    transition: background-color 0.3s;
+    /* Animate background color */
+}
+
+.custom-popup-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Light background on hover */
+}
+
+.custom-submenu-item:hover .custom-popup-submenu {
+    display: block;
+    /* Show popup submenu on hover */
+}
+
+
+.icon-spacing {
+    margin: 0 8px; /* Add horizontal space between text and icon */
+}
+
+ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+li {
+    margin-bottom: 10px; /* Add spacing between each list item */
+}
+.overly_load:after {
+    position: absolute; /* Ensure it overlays */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999; /* Ensure it appears above other elements */
+    display: block; /* Ensures it's visible */
+}
+
+.bag_popup:after {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    width: 1%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.5); */
+    z-index: 999;
+    display: block;
+}
