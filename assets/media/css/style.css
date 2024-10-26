@@ -99,6 +99,7 @@ body.video_open {
     margin-top: -222px;
     left: 0;
     transition: all 0.5s;
+    width: 100%;
     -webkit-transform: translate3d(-100vw, 0, 0);
     -moz-transform: translate3d(100vw, 0, 0);
     -o-transform: translate3d(100vw, 0, 0);
@@ -114,7 +115,7 @@ body.video_open {
 
 .logo_load img {
     width: 200px;
-    height: 172px;
+    height: 200px;
 }
 
 .logo_load h3 {

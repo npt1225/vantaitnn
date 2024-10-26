@@ -69,7 +69,7 @@
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-206852202-1"></script>
     <script>
@@ -102,50 +102,89 @@
     <div class="wrap_menu_popup bag_popup">
         <div class="menu_container">
             <div class="menu_sm_inner menu_col">
-                <div class="row">
-                    <ul class="nav-list menu-001">
-                        <li class="nav-item dropdown">
-                            <a class="nav-item-inner-heading" href="./ve-chung-toi.html">Về Chúng Tôi</a>
+                <div class="custom-menu-container" style="display: flex; flex-direction: column; background: transparent;">
+                    <ul class="custom-nav-list">
+                        <li class="custom-nav-item">
+                            <a href="./ve-chung-toi.html" title="Về Chúng Tôi" class="custom-nav-link" style="color: #039a0f; font-size: 25px; font-weight: 600;">Về Chúng Tôi</a>
                         </li>
-                        <li class="nav-item dropdown">
-
-                            <ul class="nav-list custom-menu">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-item-inner-heading hover-service" href="#0">Dịch Vụ</a>
-                                    <ul class="nav-sub-list ul-reset">
-                                        <li class="custom-nav-sub-item">
-                                            <a href="#0" title="Vận Chuyển Chính Ngạch">Vận Chuyển Chính Ngạch</a>
-                                            <ul class="custom-popup-submenu">
-                                                <li><a href="#popup1" class="item-sub">Vận Chuyển VIỆT NAM -
-                                                        CAMPUCHIA</a></li>
-                                                <li><a href="#popup2" class="item-sub">Vận Chuyển VIỆT NAM - LÀO</a>
-                                                </li>
-                                            </ul>
+                    </ul>
+                    <ul class="custom-nav-list">
+                        <li class="custom-nav-item">
+                            <a href="./du-an-hop-tac.html" title="Dự án hợp tác" class="custom-nav-link" style="color: #039a0f; font-size: 25px; font-weight: 600;">Dự án hợp tác</a>
+                        </li>
+                    </ul>
+                    <ul class="custom-nav-list">
+                        <li class="custom-nav-item">
+                            <a href="./tin-tuc.html" title="Tin tức" class="custom-nav-link" style="color: #039a0f; font-size: 25px; font-weight: 600;">Tin tức</a>
+                        </li>
+                    </ul>
+                    <ul class="custom-nav-list">
+                        <li class="custom-nav-item">
+                            <a class="custom-nav-link" href="#0" style="color: #039a0f; font-size: 25px; font-weight: 600;">Dịch Vụ <i
+                                    class="fas fa-chevron-down submenu-icon"></i></a>
+                            <ul class="custom-submenu">
+                                <li class="custom-submenu-item item-sub">
+                                    <a href="#0" title="Vận Chuyển Chính Ngạch">VẬN CHUYỂN CHÍNH NGẠCH <i
+                                            class="fas fa-chevron-down submenu-icon-1"></i></a>
+                                    <ul class="custom-popup-submenu">
+                                        <li><a href="./dich-vu/van-chuyen-chinh-ngach-vietnam-campuchia.html"
+                                                class="item-sub">VẬN CHUYỂN VIỆT NAM -
+                                                CAMPUCHIA</a></li>
+    
+                                        <li><a href="./dich-vu/van-chuyen-chinh-ngach-vietnam-lao.html"
+                                                class="custom-popup-item">VIỆT NAM - LÀO</a></li>
+                                    </ul>
+                                </li>
+                                <li class="custom-submenu-item item-sub">
+                                    <a href="#0" title="Vận Chuyển Tiểu Ngạch">VẬN CHUYỂN TIỂU NGẠCH <i
+                                            class="fas fa-chevron-down submenu-icon-1"></i></a>
+                                    <ul class="custom-popup-submenu">
+                                        <li>
+                                            <a href="./dich-vu/van-chuyen-tieu-ngach-tu-viet-nam-den-campuchia.html"
+                                                class="custom-popup-item">
+                                                <span> VIỆT NAM</span>
+                                                <i class="fa-solid fa-arrow-right-arrow-left icon-spacing"></i>
+                                                <span>CAMPUCHIA</span>
+                                            </a>
                                         </li>
-                                        <li class="custom-nav-sub-item-1">
-                                            <a href="#0" title="Vận Chuyển Tiểu Ngạch">Vận Chuyển Tiểu Ngạch</a>
-                                            <ul class="custom-popup-submenu-1">
-                                                <li><a href="./dich-vu/van-chuyen-tieu-ngach-tu-viet-nam-den-campuchia.html"
-                                                        class="item-sub-1">Vận Chuyển VIỆT NAM -
-                                                        CAMPUCHIA</a></li>
-                                                <li><a href="#popup2" class="item-sub-1">Vận Chuyển VIỆT NAM - LÀO</a>
-                                                </li>
-                                                <li><a href="#popup3" class="item-sub-1">Vận Chuyển VIỆT NAM - THÁI
-                                                        LAN</a></li>
-                                            </ul>
-                                        </li>
+                                        <li> <a href="./dich-vu/van-chuyen-tieu-ngach-tu-viet-nam-den-lao.html"
+                                                class="custom-popup-item">
+                                                <span> VIỆT NAM</span>
+                                                <i class="fa-solid fa-arrow-right-arrow-left icon-spacing"></i>
+                                                <span>LÀO</span>
+                                            </a></li>
+                                        <li> <a href="./dich-vu/van-chuyen-tieu-ngach-tu-viet-nam-den-thailan.html"
+                                                class="custom-popup-item">
+                                                <span> VIỆT NAM</span>
+                                                <i class="fa-solid fa-arrow-right-arrow-left icon-spacing"></i>
+                                                <span>THÁI LAN</span>
+                                            </a></li>
+                                    </ul>
+                                </li>
+                                <li class="custom-submenu-item item-sub">
+                                    <a href="#0" title="Chuyển Phát Quốc Tế">CHUYỂN PHÁT QUỐC TẾ <i
+                                            class="fas fa-chevron-down submenu-icon-1"></i></a>
+                                    <ul class="custom-popup-submenu">
+                                        <li><a href="#popup4" class="custom-popup-item">THÁI LAN</a></li>
+                                        <li><a href="#popup5" class="custom-popup-item">HÀN QUỐC</a></li>
+                                        <li><a href="#popup6" class="custom-popup-item">SINGAPORE</a></li>
+                                        <li><a href="#popup7" class="custom-popup-item">MALAYSIA</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-item-inner-heading" href="/en/tin-tuc" title="News">Tin Tức</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-item-inner-heading" href="./lien-he.html" title="Contact">Liên Hệ</a>
+                    </ul>
+    
+                    <ul class="custom-nav-list">
+                        <li class="custom-nav-item">
+                            <a href="./tuyen-dung.html" title="Tuyển dụng" class="custom-nav-link" style="color: #039a0f; font-size: 25px; font-weight: 600;">Tuyển dụng</a>
                         </li>
                     </ul>
-
+                    <ul class="custom-nav-list">
+                        <li class="custom-nav-item">
+                            <a href="./lien-he.html" title="Liên Hệ" class="custom-nav-link" style="color: #039a0f; font-size: 25px; font-weight: 600;">Liên Hệ</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="row box_share">
                     <ul>
@@ -246,9 +285,12 @@
                                 <a href="#0" title="Vận Chuyển Chính Ngạch">VẬN CHUYỂN CHÍNH NGẠCH <i
                                         class="fas fa-chevron-down submenu-icon-1"></i></a>
                                 <ul class="custom-popup-submenu">
-                                    <li><a href="#popup1" class="custom-popup-item"> VIỆT NAM - CAMPUCHIA</a>
-                                    </li>
-                                    <li><a href="#popup2" class="custom-popup-item">VIỆT NAM - LÀO</a></li>
+                                    <li><a href="./dich-vu/van-chuyen-chinh-ngach-vietnam-campuchia.html"
+                                            class="item-sub">VẬN CHUYỂN VIỆT NAM -
+                                            CAMPUCHIA</a></li>
+
+                                    <li><a href="./dich-vu/van-chuyen-chinh-ngach-vietnam-lao.html"
+                                            class="custom-popup-item">VIỆT NAM - LÀO</a></li>
                                 </ul>
                             </li>
                             <li class="custom-submenu-item item-sub">
@@ -305,7 +347,7 @@
         </div>
     </section>
 
-    <section id="sub_bg_area"  style="margin-top: 100px;">
+    <section id="sub_bg_area" style="margin-top: 100px;">
         <div class="container">
             <div class="row">
                 <a href="./index.html">
@@ -356,18 +398,19 @@
                         <form action="" class="reply-form form_container" id="myForm" method="post">
                             <div id="success"></div>
                             <h3>Đăng ký nhận tư vấn</h3>
-                        
+
                             <div class="form_row">
                                 <div class="padding_20">
                                     <input autocomplete="off" class="form_textbox" data-val="true"
                                         data-val-length="The field Họ tên must be a string with a maximum length of 250."
-                                        data-val-length-max="250" id="Name" name="Name" required="required" type="text" />
+                                        data-val-length-max="250" id="Name" name="Name" required="required"
+                                        type="text" />
                                     <label class="form_label" for="Name">Họ tên</label>
                                     <span class="field-validation-valid text-danger" data-valmsg-for="Name"
                                         data-valmsg-replace="true"></span>
                                 </div>
                             </div>
-                        
+
                             <div class="form_row">
                                 <div class="padding_20">
                                     <input autocomplete="off" class="form_textbox" data-val="true"
@@ -379,18 +422,19 @@
                                         data-valmsg-replace="true"></span>
                                 </div>
                             </div>
-                        
+
                             <div class="form_row">
                                 <div class="padding_20">
                                     <input autocomplete="off" class="form_textbox" data-val="true"
                                         data-val-length="The field Số điện thoại must be a string with a maximum length of 15."
-                                        data-val-length-max="15" id="Phone" name="Phone" required="required" type="text" />
+                                        data-val-length-max="15" id="Phone" name="Phone" required="required"
+                                        type="text" />
                                     <label class="form_label" for="Phone">Số điện thoại</label>
                                     <span class="field-validation-valid text-danger" data-valmsg-for="Phone"
                                         data-valmsg-replace="true"></span>
                                 </div>
                             </div>
-                        
+
                             <div class="form_row">
                                 <div class="padding_20">
                                     <input autocomplete="off" class="form_textbox" data-val="true"
@@ -402,7 +446,7 @@
                                         data-valmsg-replace="true"></span>
                                 </div>
                             </div>
-                        
+
                             <div class="form_row">
                                 <div class="padding_20">
                                     <div class="dropdown">
@@ -424,7 +468,7 @@
                                     </div>
                                 </div>
                             </div>
-                        
+
                             <div class="form_row">
                                 <textarea class="form_textbox" cols="20" data-val="true"
                                     data-val-required="Yêu cầu không được để trống" id="Content" name="Content"
@@ -433,12 +477,12 @@
                                 <span class="field-validation-valid text-danger" data-valmsg-for="Content"
                                     data-valmsg-replace="true"></span>
                             </div>
-                        
+
                             <div class="button_Smore btn_submit" id="btn-send-contact">
                                 <span><input type="button" onclick="sendMessage();" value="Gửi"></span>
                             </div>
                         </form>
-                        
+
                     </div>
                 </div>
             </div>
@@ -611,17 +655,19 @@
                             <div class="row box_share">
                                 <ul>
                                     <li>
-                                        <a href="https://www.facebook.com/TNNsolutionslogistics" target="_blank" 
-                                            title="Facebook"><img src="/assets/media/img/logo-fb.png" style="width: 35px; height: 35px;" /></a>
+                                        <a href="https://www.facebook.com/TNNsolutionslogistics" target="_blank"
+                                            title="Facebook"><img src="/assets/media/img/logo-fb.png"
+                                                style="width: 35px; height: 35px;" /></a>
                                     </li>
                                     <li>
                                         <a href="https://www.linkedin.com/company/u-i-logistics-corporation"
-                                            target="_blank" title="Zalo"><img
-                                                src="/assets/media/img/logo-zalo.png" style="width: 30px; height: 30px;"/></a>
+                                            target="_blank" title="Zalo"><img src="/assets/media/img/logo-zalo.png"
+                                                style="width: 30px; height: 30px;" /></a>
                                     </li>
                                     <li>
-                                        <a href="tel:0903060517" target="_blank"
-                                            title="Phone"><img src="./assets/media/img/logo-phone.png"  style="width: 30px; height: 30px; border-radius: 50%;"/></a>
+                                        <a href="tel:0903060517" target="_blank" title="Phone"><img
+                                                src="./assets/media/img/logo-phone.png"
+                                                style="width: 30px; height: 30px; border-radius: 50%;" /></a>
                                     </li>
                                 </ul>
                             </div>
@@ -706,25 +752,28 @@
     </section>
 
     <div class="floating-buttons">
-        
+
         <!-- Additional buttons initially hidden -->
         <div class="hidden-buttons">
             <a href="tel:0903060517" class="call-button" title="Gọi điện">
-                <img src="https://www.clipartmax.com/png/middle/358-3580250_call-bob-at-telephone-icon-vector-png.png" style="width: 40px; height: 40px; border-radius: 50%;" />
+                <img src="https://www.clipartmax.com/png/middle/358-3580250_call-bob-at-telephone-icon-vector-png.png"
+                    style="width: 40px; height: 40px; border-radius: 50%;" />
             </a>
             <a href="https://zalo.me/0903060517" class="zalo-button" title="Zalo">
-                <img src="https://platinumdentalvietnam.com/wp-content/uploads/2020/08/Zalo-600x600-1.png" style="width: 40px; height: 40px;" />
+                <img src="https://platinumdentalvietnam.com/wp-content/uploads/2020/08/Zalo-600x600-1.png"
+                    style="width: 40px; height: 40px;" />
             </a>
             <a href="https://www.facebook.com/TNNsolutionslogistics" class="facebook-button" title="Facebook">
-               <img src="https://www.teahub.io/photos/full/11-115962_facebook-logo-png-transparent-background-facebook-png.png" style="width: 40px; height: 40px;"/>
+                <img src="https://www.teahub.io/photos/full/11-115962_facebook-logo-png-transparent-background-facebook-png.png"
+                    style="width: 40px; height: 40px;" />
             </a>
         </div>
         <a href="#0" class="main-button" title="More Options">
             <i class="fas fa-plus"></i> <!-- Main button icon -->
         </a>
     </div>
-   
-   
+
+
     <script>
         const mainButton = document.querySelector('.main-button');
         const hiddenButtons = document.querySelector('.hidden-buttons');
@@ -764,44 +813,44 @@
     <script src="/assets/media/my/contact.js"></script>
 
     <script
-    type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "66abef50-3cb4-4ade-99f4-9317be87ad2e"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
+        type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "66abef50-3cb4-4ade-99f4-9317be87ad2e"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
     <script>
         function sendMessage() {
-    // Lấy dữ liệu từ các trường trong biểu mẫu
-    var name = document.getElementById('Name').value;
-    var email = document.getElementById('Email').value;
-    var phone = document.getElementById('Phone').value;
-    var company = document.getElementById('Company').value;
-    var serviceID = document.getElementById('ServiceID').value;
-    var content = document.getElementById('Content').value;
+            // Lấy dữ liệu từ các trường trong biểu mẫu
+            var name = document.getElementById('Name').value;
+            var email = document.getElementById('Email').value;
+            var phone = document.getElementById('Phone').value;
+            var company = document.getElementById('Company').value;
+            var serviceID = document.getElementById('ServiceID').value;
+            var content = document.getElementById('Content').value;
 
-    // Tạo đối tượng dữ liệu cho EmailJS
-    var data = {
-        service_id: 'service_rxt7mr7', // Thay thế YOUR_SERVICE_ID bằng ID dịch vụ của bạn
-            template_id: 'template_rla2cbq', // Thay thế YOUR_TEMPLATE_ID bằng ID mẫu của bạn
-            user_id: 'KUBfXmAZmudBXBY7a', // Thay thế YOUR_PUBLIC_KEY bằng khóa công khai của bạn
-        template_params: {
-            'username': name,
-            'email': email,
-            'phone': phone,
-            'company': company,
-            'service_id': serviceID,
-            'content': content
+            // Tạo đối tượng dữ liệu cho EmailJS
+            var data = {
+                service_id: 'service_rxt7mr7', // Thay thế YOUR_SERVICE_ID bằng ID dịch vụ của bạn
+                template_id: 'template_rla2cbq', // Thay thế YOUR_TEMPLATE_ID bằng ID mẫu của bạn
+                user_id: 'KUBfXmAZmudBXBY7a', // Thay thế YOUR_PUBLIC_KEY bằng khóa công khai của bạn
+                template_params: {
+                    'username': name,
+                    'email': email,
+                    'phone': phone,
+                    'company': company,
+                    'service_id': serviceID,
+                    'content': content
+                }
+            };
+
+            // Gửi yêu cầu đến EmailJS
+            $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+                type: 'POST',
+                data: JSON.stringify(data),
+                contentType: 'application/json'
+            }).done(function () {
+                swal("Thành công!", "Email của bạn đã được gửi thành công! Chúng tôi sẽ phản hồi bạn trong thời gian sớm nhất", "success");
+                document.getElementById('myForm').reset(); // Reset biểu mẫu sau khi gửi
+            }).fail(function (error) {
+                alert('Đã xảy ra lỗi: ' + JSON.stringify(error));
+            });
         }
-    };
-
-    // Gửi yêu cầu đến EmailJS
-    $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
-        type: 'POST',
-        data: JSON.stringify(data),
-        contentType: 'application/json'
-    }).done(function() {
-        swal("Thành công!", "Email của bạn đã được gửi thành công! Chúng tôi sẽ phản hồi bạn trong thời gian sớm nhất", "success");
-        document.getElementById('myForm').reset(); // Reset biểu mẫu sau khi gửi
-    }).fail(function(error) {
-        alert('Đã xảy ra lỗi: ' + JSON.stringify(error));
-    });
-}
     </script>
     <script>
         $('.dropdown-menu li').on('click', function () {
