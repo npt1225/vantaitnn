@@ -1234,7 +1234,7 @@ footer .box_share ul li:hover a {
 .bag_skewed {
     height: -webkit-fill-available;
     background: #ddd;
-    transform: skewX(-31.1deg) translateX(40%);
+
     position: relative;
     overflow: hidden;
 }
@@ -1256,7 +1256,7 @@ footer .box_share ul li:hover a {
     height: ;
 }
 
-.bag_skewed:before {
+/* .bag_skewed:before {
     content: "";
     background: #0000007d;
     position: absolute;
@@ -1272,7 +1272,7 @@ footer .box_share ul li:hover a {
     transform: translate(100%, 0px);
     transition: all 0.5s;
     transition-delay: 0.1s;
-}
+} */
 
 [data-aos^="fade"][data-aos^="fade"].aos-animate .bag_skewed:before {
     opacity: 1;
@@ -1283,15 +1283,17 @@ footer .box_share ul li:hover a {
 
 .bag_skewed:after {
     content: "";
-    background: url(../img/bag_about.jpg) right no-repeat;
+    background: url(../index/IMG_0633.png) right no-repeat;
     top: 0;
     height: 100%;
     display: inline-block;
-    transform: skewX(31.1deg) translateX(-30%);
+    
+    transform:  translateX(15%);
     position: absolute;
     background-attachment: fixed;
     background-size: contain;
-    width: 100%;
+    width: 80%;
+    border-radius: 20px;
 }
 
 .container_lined {
