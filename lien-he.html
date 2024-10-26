@@ -12,19 +12,19 @@
     <!--Meta SEO -->
     <meta name="AUTHOR" content="Công Ty TNHH TMDV Vận Tải T&N" />
     <meta name="COPYRIGHT" content="Công Ty TNHH TMDV Vận Tải T&N" />
-    <meta name="description" content="Cung cấp các giải pháp logistics đáp ứng nhu cầu của từng khách hàng" />
+    <meta name="description" content="Cung cấp các giải pháp Logistics đáp ứng nhu cầu của từng khách hàng" />
     <meta name="keywords"
         content="Đại lý thủ tục hải quan, Dịch vụ kho vận, Dịch vụ vận tải tội địa, Dịch vụ vận tải đường biển và hàng không quốc tế" />
     <meta name="news_keywords"
         content="Đại lý thủ tục hải quan, Dịch vụ kho vận, Dịch vụ vận tải tội địa, Dịch vụ vận tải đường biển và hàng không quốc tế" />
-    <meta property="og:description" content="Cung cấp các giải pháp logistics đáp ứng nhu cầu của từng khách hàng">
+    <meta property="og:description" content="Cung cấp các giải pháp Logistics đáp ứng nhu cầu của từng khách hàng">
 
 
 
 
     <!--Meta Data Seo 2 -->
     <meta property="og:url" content="https://www.unilogistics.vn/vi/lien-he">
-    <meta property="og:description" content="Cung cấp các giải pháp logistics đáp ứng nhu cầu của từng khách hàng">
+    <meta property="og:description" content="Cung cấp các giải pháp Logistics đáp ứng nhu cầu của từng khách hàng">
     <meta property="og:image" content="https://www.unilogistics.vn/upload/images/cong-ty/logo-thumnail.png">
     <meta property="dable:author" content="Công Ty TNHH TMDV Vận Tải T&N">
 
@@ -45,6 +45,29 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./style-menu.css">
+    <style>
+        .overly_load:after {
+            position: absolute;
+            /* Ensure it overlays */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 999;
+            display: block;
+        }
+
+        .bag_popup:after {
+            position: absolute;
+            top: 28px;
+            left: 0;
+            width: 1%;
+            height: 100%;
+            z-index: 999;
+            display: block;
+        }
+    </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -71,10 +94,11 @@
 
 <body>
 
-    <!-- Menu -->
 
 
-    <!--Menu Popup -->
+
+
+
     <div class="wrap_menu_popup bag_popup">
         <div class="menu_container">
             <div class="menu_sm_inner menu_col">
@@ -101,7 +125,8 @@
                                         <li class="custom-nav-sub-item-1">
                                             <a href="#0" title="Vận Chuyển Tiểu Ngạch">Vận Chuyển Tiểu Ngạch</a>
                                             <ul class="custom-popup-submenu-1">
-                                                <li><a href="./dich-vu/van-chuyen-tieu-ngach-tu-viet-nam-den-campuchia.html" class="item-sub-1">Vận Chuyển VIỆT NAM -
+                                                <li><a href="./dich-vu/van-chuyen-tieu-ngach-tu-viet-nam-den-campuchia.html"
+                                                        class="item-sub-1">Vận Chuyển VIỆT NAM -
                                                         CAMPUCHIA</a></li>
                                                 <li><a href="#popup2" class="item-sub-1">Vận Chuyển VIỆT NAM - LÀO</a>
                                                 </li>
@@ -126,11 +151,12 @@
                     <ul>
                         <li>
                             <a href="https://www.facebook.com/TNNsolutionslogistics" target="_blank"
-                                title="Facebook"><img src="/assets/media/img/logo-fb.png"  style="width: 60px; height: 60px;"/></a>
+                                title="Facebook"><img src="/assets/media/img/logo-fb.png"
+                                    style="width: 60px; height: 60px;" /></a>
                         </li>
                         <li style="margin: 0 30px;">
                             <a href="https://zalo.me/0903060517" target="_blank" title="Zalo"><img
-                                    src="/assets/media/img/logo-zalo.png"  style="width: 50px; height: 50px;"/></a>
+                                    src="/assets/media/img/logo-zalo.png" style="width: 50px; height: 50px;" /></a>
                         </li>
                         <li>
                             <a href="tel:0903060517" target="_blank" title="Phone"><img
@@ -174,10 +200,11 @@
         </div>
     </div>
 
+
     <!-- Wrap Logo -->
     <div class="wrap_button_menu" data-aos="fade-right">
         <a href="./index.html" class="Logo_scroll"><img style="width: 100%;margin-top: -7px;"
-                src="/assets/media/img/bg-tnn.png"></a>
+                src="/assets/media/img/background.png"></a>
         <div class="menu_btn">
             <div class="line_menu half start"></div>
             <div class="line_menu"></div>
@@ -188,157 +215,97 @@
 
 
 
+
+    <!-- New Content -->
     <section id="section1" class="header cd_section_onepage menu-mobile">
         <div class="wrap_menu_horizontal">
             <!-- Menu Header -->
 
-            <div class="menu_align" style="display: flex; left: 100px;">
-                <ul class="nav-list custom-menu">
-                    <li class="nav-item dropdown">
-                        <a href="./ve-chung-toi.html" title="Về Chúng Tôi"
-                            class="li_menu nav-item-inner-heading hover-service"
-                            style="font-size: 20px;font-weight: bold;">Về Chúng Tôi</a>
+            <div class="custom-menu-container">
+                <ul class="custom-nav-list">
+                    <li class="custom-nav-item">
+                        <a href="./ve-chung-toi.html" title="Về Chúng Tôi" class="custom-nav-link">Về Chúng Tôi</a>
                     </li>
                 </ul>
-               
-                <li class="nav-item dropdown">
+                <ul class="custom-nav-list">
+                    <li class="custom-nav-item">
+                        <a href="./du-an-hop-tac.html" title="Dự án hợp tác" class="custom-nav-link">Dự án hợp tác</a>
+                    </li>
+                </ul>
+                <ul class="custom-nav-list">
+                    <li class="custom-nav-item">
+                        <a href="./tin-tuc.html" title="Tin tức" class="custom-nav-link">Tin tức</a>
+                    </li>
+                </ul>
+                <ul class="custom-nav-list">
+                    <li class="custom-nav-item">
+                        <a class="custom-nav-link" href="#0">Dịch Vụ <i
+                                class="fas fa-chevron-down submenu-icon"></i></a>
+                        <ul class="custom-submenu">
+                            <li class="custom-submenu-item item-sub">
+                                <a href="#0" title="Vận Chuyển Chính Ngạch">VẬN CHUYỂN CHÍNH NGẠCH <i
+                                        class="fas fa-chevron-down submenu-icon-1"></i></a>
+                                <ul class="custom-popup-submenu">
+                                    <li><a href="#popup1" class="custom-popup-item"> VIỆT NAM - CAMPUCHIA</a>
+                                    </li>
+                                    <li><a href="#popup2" class="custom-popup-item">VIỆT NAM - LÀO</a></li>
+                                </ul>
+                            </li>
+                            <li class="custom-submenu-item item-sub">
+                                <a href="#0" title="Vận Chuyển Tiểu Ngạch">VẬN CHUYỂN TIỂU NGẠCH <i
+                                        class="fas fa-chevron-down submenu-icon-1"></i></a>
+                                <ul class="custom-popup-submenu">
+                                    <li>
+                                        <a href="./dich-vu/van-chuyen-tieu-ngach-tu-viet-nam-den-campuchia.html"
+                                            class="custom-popup-item">
+                                            <span> VIỆT NAM</span>
+                                            <i class="fa-solid fa-arrow-right-arrow-left icon-spacing"></i>
+                                            <span>CAMPUCHIA</span>
+                                        </a>
+                                    </li>
+                                    <li> <a href="./dich-vu/van-chuyen-tieu-ngach-tu-viet-nam-den-campuchia.html"
+                                            class="custom-popup-item">
+                                            <span> VIỆT NAM</span>
+                                            <i class="fa-solid fa-arrow-right-arrow-left icon-spacing"></i>
+                                            <span>LÀO</span>
+                                        </a></li>
+                                    <li> <a href="./dich-vu/van-chuyen-tieu-ngach-tu-viet-nam-den-campuchia.html"
+                                            class="custom-popup-item">
+                                            <span> VIỆT NAM</span>
+                                            <i class="fa-solid fa-arrow-right-arrow-left icon-spacing"></i>
+                                            <span>THÁI LAN</span>
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <li class="custom-submenu-item item-sub">
+                                <a href="#0" title="Chuyển Phát Quốc Tế">CHUYỂN PHÁT QUỐC TẾ <i
+                                        class="fas fa-chevron-down submenu-icon-1"></i></a>
+                                <ul class="custom-popup-submenu">
+                                    <li><a href="#popup4" class="custom-popup-item">THÁI LAN</a></li>
+                                    <li><a href="#popup5" class="custom-popup-item">HÀN QUỐC</a></li>
+                                    <li><a href="#popup6" class="custom-popup-item">SINGAPORE</a></li>
+                                    <li><a href="#popup7" class="custom-popup-item">MALAYSIA</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
 
-                    <ul class="nav-list custom-menu">
-                        <li class="nav-item dropdown">
-                            <a class="nav-item-inner-heading hover-service" href="#0"
-                                style="font-size: 20px;font-weight: bold;">Dịch Vụ</a>
-                            <ul class="nav-sub-list ul-reset">
-                                <li class="custom-nav-sub-item">
-                                    <a href="#0" title="Vận Chuyển Chính Ngạch">Vận Chuyển Chính Ngạch</a>
-                                    <ul class="custom-popup-submenu">
-                                        <li><a href="#popup1" class="item-sub">Vận Chuyển VIỆT NAM -
-                                                CAMPUCHIA</a></li>
-                                        <li><a href="#popup2" class="item-sub">Vận Chuyển VIỆT NAM - LÀO</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="custom-nav-sub-item-1">
-                                    <a href="#0" title="Vận Chuyển Tiểu Ngạch">Vận Chuyển Tiểu Ngạch</a>
-                                    <ul class="custom-popup-submenu-1">
-                                        <li><a href="./dich-vu/van-chuyen-tieu-ngach-tu-viet-nam-den-campuchia.html" class="item-sub-1">Vận Chuyển VIỆT NAM -
-                                                CAMPUCHIA</a></li>
-                                        <li><a href="#popup2" class="item-sub-1">Vận Chuyển VIỆT NAM - LÀO</a>
-                                        </li>
-                                        <li><a href="#popup3" class="item-sub-1">Vận Chuyển VIỆT NAM - THÁI
-                                                LAN</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <ul class="nav-list custom-menu">
-                    <li class="nav-item dropdown">
-                        <a href="./lien-he.html" title="Về Chúng Tôi"
-                            class="li_menu nav-item-inner-heading hover-service"
-                            style="font-size: 20px;font-weight: bold;">Liên Hệ</a>
+                <ul class="custom-nav-list">
+                    <li class="custom-nav-item">
+                        <a href="./tuyen-dung.html" title="Tuyển dụng" class="custom-nav-link">Tuyển dụng</a>
+                    </li>
+                </ul>
+                <ul class="custom-nav-list">
+                    <li class="custom-nav-item">
+                        <a href="./lien-he.html" title="Liên Hệ" class="custom-nav-link">Liên Hệ</a>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
-    <section id="section1" class="cd-section rep_home">
-       
 
-        <!-- Layout Mây Bay -->
-        <div class="background_layer">
-            <ul>
-                <li>
-                    <div class="bg_1">
-                        <div class="wrap_logo" data-aos="fade-right">
-                            <a href="./index.html" title="VẬN TẢI T&amp;N">
-                                <img src="/assets/media/img/bg-tnn.png">
-                                <h4>CÔNG TY TNHH TMDV VẬN TẢI T&amp;N</h4>
-                                <i>vantaitnn.com</i>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="bg_2"></div>
-                </li>
-                <li>
-                    <div class="bg_3"></div>
-                </li>
-                <li>
-                    <div class="bg_4"></div>
-                </li>
-                <li>
-                    <div class="planes"></div>
-                </li>
-                <li>
-                    <div class="cloud_1"></div>
-                </li>
-                <li>
-                    <div class="cloud_2"></div>
-                </li>
-                <li>
-                    <div class="cloud_3"></div>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Dịch Vụ -->
-        <div class="wrap_slider">
-            <div class="content_slider">
-                <div class="content_title"
-                    data-default-text="<h4>Dịch Vụ Vận Tải & Logistics</h4>“Cung cấp giải pháp vận chuyển đáp ứng mọi nhu cầu của từng khách hàng” ">
-                    <div class="text">
-                        <h4>Dịch Vụ Logistics</h4>Cung cấp giải pháp logistics đáp ứng mọi nhu cầu của khách hàng
-                    </div>
-                </div>
-                <div class="gallery_content">
-                    <div class="slider_skew">
-                        <div class="gallery_item">
-                            <a href="/en/dich-vu/customs-brokerage-1" title="Customs Brokerage">
-                                <span class="fa fa-external-link"></span>
-                                <img alt="Customs Brokerage - VẬN TẢI T&amp;N"
-                                    src="/upload/images/dich-vu/dai-dien/DV_DLTTHQ.png"
-                                    data-title="<h4>Thủ Tục Hải Quan</h4>Nhà cung cấp dịch vụ logistics 3PL hàng đầu tại Việt Nam"
-                                    width="340">
-                            </a>
-                        </div>
-                        <div class="gallery_item">
-                            <a href="/en/dich-vu/warehousing-distribution-2" title="Warehousing &amp; Distribution">
-                                <span class="fa fa-external-link"></span>
-                                <img alt="Warehousing &amp; Distribution - VẬN TẢI T&amp;N"
-                                    src="/upload/images/dich-vu/dai-dien/DV_KVPPHH.png"
-                                    data-title="<h4>Kho Bãi & Phân Phối</h4>Tự hào sở hữu hệ thống kho bãi hiện đại, hỗ trợ tối ưu hóa vận chuyển hàng hóa từ Việt Nam đến Campuchia, Lào và Thái Lan, đảm bảo phân phối nhanh chóng và an toàn"
-                                    width="340">
-                            </a>
-                        </div>
-                        <div class="gallery_item">
-                            <a href="/en/dich-vu/inland-transportation-3" title="Inland transportation">
-                                <span class="fa fa-external-link"></span>
-                                <img alt="Inland transportation - VẬN TẢI T&amp;N"
-                                    src="/upload/images/dich-vu/dai-dien/DV_VTDB.png"
-                                    data-title="<h4>Vận Chuyển Đường Bộ</h4>Dịch vụ vận tải đường bộ nội địa và liên vận quốc tế từ Việt Nam đến Campuchia, Lào, và Thái Lan"
-                                    width="340">
-                            </a>
-                        </div>
-                        <div class="gallery_item">
-                            <a href="/en/dich-vu/international-freight-forwarding-service-5"
-                                title="International Freight Forwarding Service">
-                                <span class="fa fa-external-link"></span>
-                                <img alt="International Freight Forwarding Service - VẬN TẢI T&amp;N"
-                                    src="/upload/images/dich-vu/dai-dien/DV_DBHK.png"
-                                    data-title="<h4>Dịch Vụ Vận Tải Quốc Tế</h4>Dịch vụ vận chuyển quốc tế chuyên nghiệp, kết nối Việt Nam với Campuchia, Lào, Thái Lan và các thị trường toàn cầu"
-                                    width="340">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="more_listings"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="sub_bg_area">
+    <section id="sub_bg_area"  style="margin-top: 100px;">
         <div class="container">
             <div class="row">
                 <a href="./index.html">
@@ -369,7 +336,7 @@
                     <div class="col-md-6">
                         <div class="padding-30">
                             <h3 style="color: #21409a; font-family: san_francisco_textbold;text-transform: uppercase;">
-                                Bạn quan t&#226;m đến c&#225;c dịch vụ logistics của ch&#250;ng t&#244;i?
+                                Bạn quan t&#226;m đến c&#225;c dịch vụ Logistics của ch&#250;ng t&#244;i?
                             </h3>
                             <p>
 
