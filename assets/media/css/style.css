@@ -1237,6 +1237,7 @@ footer .box_share ul li:hover a {
 
     position: relative;
     overflow: hidden;
+    border-radius: 30px!important;
 }
 
 .wrap_bag_about {
@@ -1283,7 +1284,7 @@ footer .box_share ul li:hover a {
 
 .bag_skewed:after {
     content: "";
-    background: url(../index/IMG_0633.png) right no-repeat;
+    background: url(../index/hinh_index.jpg) right no-repeat;
     top: 0;
     height: 100%;
     display: inline-block;
@@ -1293,7 +1294,7 @@ footer .box_share ul li:hover a {
     background-attachment: fixed;
     background-size: contain;
     width: 80%;
-    border-radius: 20px;
+    border-radius: 30px!important;
 }
 
 .container_lined {
