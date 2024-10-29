@@ -45,6 +45,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="./style-menu.css">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-206852202-1"></script>
     <script>
@@ -54,6 +55,8 @@
 
         gtag('config', 'UA-206852202-1');
     </script>
+    <meta name="google-translate-customization" content="YOUR_GOOGLE_TRANSLATE_CUSTOMIZATION_TOKEN"></meta>
+
 
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -80,10 +83,23 @@
 <body>
     <!-- Loading page -->
     <div class="overly_load">
-        <div class="logo_load">
-            <img src="/assets/media/img/bg-tnn.png" />
-            <h3 data-aos="fade-right">Công Ty TNHH TMDV Vận Tải T&N</h3>
-            <p data-aos="fade-right">vantaitnn.com</p>
+        <div class="logo_load" style="display: flex; gap: 100px;">
+            <div>
+                <img src="/assets/media/img/bg-tnn.png" />
+                <h3 data-aos="fade-right">Công Ty TNHH TMDV Vận Tải T&N</h3>
+                <p data-aos="fade-right">vantaitnn.com</p>
+            </div>
+
+            <div style="display: flex; flex-direction: column; justify-content: center;">
+                <div style="margin-bottom: 20px;">
+                    <h3 data-aos="fade-right" style="text-align: center;">Việt Nam - Campuchia - Lào</h3>
+                </div>
+                <div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/800px-Flag_of_Vietnam.svg.png" alt="Vietnam Flag" style="width: 160px; height: 100px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_Cambodia.svg/1200px-Flag_of_Cambodia.svg.png" alt="Cambodia Flag" style="width: 160px; height: 100px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Flag_of_Laos.svg/225px-Flag_of_Laos.svg.png" alt="Laos Flag" style="width: 160px; height: 100px;">
+                </div>
+            </div>
         </div>
         <div class="wrap_line">
             <div id="line_load">
@@ -128,11 +144,11 @@
                 <div class="custom-menu-container"
                     style="display: flex; flex-direction: column; background: transparent;">
                     <ul class="custom-nav-list">
-                    <li class="custom-nav-item">
-                        <a href="./index.html" title="Trang Chủ" class="custom-nav-link"
-                            style="color: #039a0f; font-size: 25px; font-weight: 600;">Trang Chủ</a>
-                    </li>
-                       
+                        <li class="custom-nav-item">
+                            <a href="./index.html" title="Trang Chủ" class="custom-nav-link"
+                                style="color: #039a0f; font-size: 25px; font-weight: 600;">Trang Chủ</a>
+                        </li>
+
                     </ul>
                     <ul class="custom-nav-list">
                         <li class="custom-nav-item">
@@ -346,7 +362,7 @@
                     <li class="custom-nav-item">
                         <a href="./index.html" title="Trang chủ" class="custom-nav-link">Trang Chủ</a>
                     </li>
-                   
+
                 </ul>
                 <ul class="custom-nav-list">
                     <li class="custom-nav-item">
@@ -450,12 +466,12 @@
                 <li>
                     <div class="bg_2"></div>
                 </li>
-                <li>
+                <!-- <li>
                     <div class="bg_3"></div>
-                </li>
-                <li>
+                </li> -->
+                <!-- <li>
                     <div class="bg_4"></div>
-                </li>
+                </li> -->
                 <li>
                     <div class="planes"></div>
                 </li>
@@ -1028,6 +1044,18 @@
         </div>
 
     </div>
+    <div id="translate-container">
+        <div id="google_translate_element"></div>
+      </div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement(
+            { pageLanguage: 'vi', includedLanguages: 'en,km,lo,th,vi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+            'google_translate_element'
+          );
+        }
+      </script>
+      <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <!-- <script>
     // Đảm bảo rằng jQuery đã được đưa vào nếu bạn muốn sử dụng jQuery
