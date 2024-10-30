@@ -686,14 +686,22 @@
                             </div>
                         </div>
                         <div class="pull-right">
-                            <h4 style="font-weight: 800; font-size: 2em;">Đăng ký nhận bản tin của chúng tôi</h4>
-                            <form action="/en/Message/RegisterForNews" id="footerSignUpForm" method="post">
-                                <div class="input_subscribefrm">
-                                    <input class="form-control" style="font-weight: 600; font-size: 1.2em;" placeholder="Nhập email của bạn" id="footerSignUpEmail"
-                                        required type="email">
-                                    <span class="input_subscribebutton">
-                                        <input type="button" style="font-weight: 600; font-size: 1.2em;" value="Gửi" id="footerSignUpSubmit">
-                                    </span>
+                            <h4 style="font-weight: 800; font-size: 2em;line-height: 35px;">Đăng ký nhận bản tin của
+                                chúng tôi</h4>
+                            <form action="" class="reply-form " id="myForm" method="post" style="background:transparent;text-align: center;border-radius: 20px;padding: 26px;">
+                                <div id="success"></div>
+                                <div class="input_subscribefrm" style="text-align: center;">
+                                    <input class="form-control"
+                                        style="font-weight: 600; font-size: 1.2em;border-radius: 30px;"
+                                        placeholder="Nhập tên của bạn" id="Name" required type="text">
+                                    <input class="form-control"
+                                        style="font-weight: 600; font-size: 1.2em; margin: 20px 0; border-radius: 30px;"
+                                        placeholder="Nhập số điện thoại của bạn" id="Phone" required type="tel">
+                                    <div class="button_Smore btn_submit" id="btn-send-contact">
+                                        <span><input type="button" onclick="sendMessage();"
+                                                style="padding: 7px 62px; color: #fff;font-size: 20px; border: none;background-color: #039a0f;border-radius: 10px;cursor: pointer;"
+                                                value="Gửi"></span>
+                                    </div>
                                 </div>
                             </form>
                         </div>
@@ -792,6 +800,40 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T95RCDL" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
+    <script>
+        function sendMessage() {
+            var name = document.getElementById('Name').value;
+            var phone = document.getElementById('Phone').value;
+            console.log(name)
+
+            var data = {
+                service_id: 'service_rxt7mr7', 
+                template_id: 'template_rla2cbq', 
+                user_id: 'KUBfXmAZmudBXBY7a', 
+                template_params: {
+                    'name': name,
+                    'phone': phone,
+                }
+            };
+
+            $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+                type: 'POST',
+                data: JSON.stringify(data),
+                contentType: 'application/json'
+            }).done(function () {
+                swal({
+                    title: "Thành công!",
+                    text: "Cảm ơn bạn đã liên hệ với chúng tôi. Chúng tôi sẽ phản hồi bạn trong thời gian sớm nhất!",
+                    icon: "success",
+                    html: true
+                });
+                document.getElementById('myForm').reset(); // Reset biểu mẫu sau khi gửi
+            }).fail(function (error) {
+                alert('Đã xảy ra lỗi: ' + JSON.stringify(error));
+            });
+        }
+    </script>
 
     <script type="text/javascript" src="/assets/media/js/jquery.min.js"></script>
     <script type="text/javascript" src="/assets/media/js/bootstrap.min.js"></script>
