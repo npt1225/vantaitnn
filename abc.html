@@ -3,84 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Ngôn Ngữ</title>
+    <title>Trang Web với Tính Năng Dịch</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 20px;
+            margin: 0; /* Đặt margin 0 cho body để không bị thụt */
+            background-color: #f9f9f9; /* Màu nền nhẹ */
         }
 
-        #translate-container {
-            text-align: center;
-            margin-top: 50px;
+        /* Kiểu cho thanh Google Translate */
+        #google_translate_element {
+            background-color: #4CAF50; /* Màu nền của thanh dịch */
+            padding: 10px; /* Khoảng cách trong thanh */
+            color: white; /* Màu chữ */
+            text-align: center; /* Căn giữa nội dung */
+            font-weight: bold; /* In đậm chữ */
+            position: relative; /* Vị trí tương đối */
+            z-index: 1; /* Đảm bảo thanh dịch nằm trên cùng */
         }
 
-        label {
-            font-size: 18px; /* Kích thước chữ cho nhãn */
-            margin-right: 10px; /* Khoảng cách giữa nhãn và select */
-        }
-
-        select {
-            padding: 10px; /* Khoảng cách bên trong */
-            font-size: 16px; /* Kích thước chữ */
-            border: 1px solid #4CAF50; /* Viền */
+        /* Kiểu cho nút ngôn ngữ */
+        .language-button {
+            padding: 15px 20px; /* Kích thước nút */
+            border: none; /* Bỏ viền */
             border-radius: 5px; /* Bo góc */
-            background-color: white; /* Màu nền */
-            transition: border-color 0.3s; /* Hiệu ứng chuyển màu */
+            background-color: #5cb85c; /* Màu nền nút */
+            color: white; /* Màu chữ nút */
+            cursor: pointer; /* Con trỏ khi hover */
+            margin: 0 5px; /* Khoảng cách giữa các nút */
+            font-size: 1rem; /* Kích thước chữ */
+            transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
         }
 
-        select:hover {
-            border-color: #45a049; /* Màu viền khi hover */
+        /* Hiệu ứng hover cho nút */
+        .language-button:hover {
+            background-color: #45a049; /* Màu nút khi hover */
+        }
+        
+        /* Nội dung chính */
+        .content {
+            padding: 20px; /* Khoảng cách cho nội dung */
+            text-align: center; /* Căn giữa nội dung */
         }
 
-        select:focus {
-            outline: none; /* Xóa viền khi nhấn */
-            border-color: #4CAF50; /* Màu viền khi focus */
+        /* Hướng dẫn sử dụng */
+        .instruction {
+            margin-bottom: 20px; /* Khoảng cách cho hướng dẫn */
+            font-weight: bold; /* In đậm hướng dẫn */
+            color: #333; /* Màu chữ */
         }
-
-        .flag-option {
-            background-repeat: no-repeat;
-            background-size: 20px 15px; /* Kích thước cờ */
-            padding-left: 30px; /* Khoảng cách bên trái để cờ không bị chồng lên chữ */
-        }
-
-        .flag-vn { background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg'); }
-        .flag-en { background-image: url('https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg'); }
-        .flag-km { background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Cambodia.svg'); }
-        .flag-lo { background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_Laos.svg'); }
-        .flag-th { background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg'); }
     </style>
 </head>
 <body>
-    <div id="translate-container">
-        <label for="language-select">Chọn ngôn ngữ:</label>
-        <select id="language-select" onchange="changeLanguage(this.value)">
-            <option class="flag-option flag-vn" value="vi">Tiếng Việt</option>
-            <option class="flag-option flag-en" value="en">English</option>
-            <option class="flag-option flag-km" value="km">Khmer</option>
-            <option class="flag-option flag-lo" value="lo">Lao</option>
-            <option class="flag-option flag-th" value="th">Thai</option>
-        </select>
+    <div id="google_translate_element"></div> <!-- Khu vực để hiển thị Google Translate -->
+
+    <!-- Nội dung chính -->
+    <div class="content">
+        <div class="instruction">Chọn ngôn ngữ bạn muốn dịch bằng cách nhấn vào các nút bên dưới:</div>
+
+        <h1>Chào mừng đến với trang của chúng tôi!</h1>
+        <p>Đây là một ví dụ về tích hợp Google Dịch để hỗ trợ nhiều ngôn ngữ.</p>
+
+        <!-- Các nút ngôn ngữ -->
+        <div>
+            <button class="language-button" onclick="changeLanguage('vi')">Tiếng Việt</button>
+            <button class="language-button" onclick="changeLanguage('en')">English</button>
+            <button class="language-button" onclick="changeLanguage('km')">Khmer</button>
+            <button class="language-button" onclick="changeLanguage('lo')">Lao</button>
+            <button class="language-button" onclick="changeLanguage('th')">Thai</button>
+        </div>
     </div>
 
+    <!-- Script tải Google Translate API -->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
     <script type="text/javascript">
         function googleTranslateElementInit() {
-            new google.translate.TranslateElement(
-                { pageLanguage: 'vi', includedLanguages: 'en,km,lo,th,vi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
-                'google_translate_element'
-            );
+            new google.translate.TranslateElement({
+                pageLanguage: 'vi', 
+                includedLanguages: 'vi,en,km,lo,th', 
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
         }
 
-        function changeLanguage(lang) {
-            // Thay đổi ngôn ngữ sử dụng Google Translate
-            const translateElement = new google.translate.TranslateElement();
-            translateElement.setEnabled(true);
-            translateElement.setLanguage(lang);
+        // Hàm để thay đổi ngôn ngữ
+        function changeLanguage(language) {
+            // Gọi Google Translate để chuyển đổi ngôn ngữ
+            const googleTranslateElement = new google.translate.TranslateElement();
+            googleTranslateElement.setEnabledLanguage(language);
+            googleTranslateElement.translatePage(language, 'vi');
         }
+
+        // Đợi cho đến khi trang tải xong
+        window.onload = function() {
+            // Khởi tạo Google Translate khi trang tải
+            googleTranslateElementInit();
+        };
     </script>
-    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>

@@ -1098,8 +1098,7 @@
                     });
                 }
             }
-
-            function addInfoWindow(marker, title, lat) {
+           function addInfoWindow(marker, title, lat) {
                 var infowindow = new google.maps.InfoWindow({
                     content: '<h6>' + title + '</h6>',
                     pixelOffset: new google.maps.Size(0, 20)
@@ -1139,6 +1138,7 @@
 
         var locations1 = [
             ['<b>Trụ sở chính</b>', 10.864437963935872, 106.67970362768958, 1],
+            ['<b>Văn Phòng HCM</b>', 10.864437963935872, 106.67970362768958, 2],
         ];
         var infowindow1 = new google.maps.InfoWindow();
         var marker1, i;

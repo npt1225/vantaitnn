@@ -1574,7 +1574,7 @@ footer .box_share ul li:hover a {
 
 .horizontal-timeline .events-content li .item {
     float: left;
-    width: 25%;
+    width: 50%;
     text-align: left;
     color: #fff;
     padding: 0 15px;
