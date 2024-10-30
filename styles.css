@@ -347,3 +347,13 @@
     font-size: 18px;
     text-transform: uppercase;
 }
+
+.form-lienhe{
+    width: 40%;
+    margin:  0 auto;
+}
+@media (max-width: 768px) {
+    .form-lienhe {
+        width: 100%;
+    }
+}
