@@ -2002,13 +2002,12 @@ footer .box_share ul li:hover a {
 .box_grid_wrap {
     border-bottom: 1px solid #e5e5e5;
     overflow: hidden;
-    padding-top: 15%;
     position: relative;
     z-index: 1;
 }
 
 [data-aos^="fade"][data-aos^="fade"].aos-animate .box_grid_wrap {
-    padding-top: 10%;
+    /* padding-top: 3%; */
     transition: 0.6s;
 }
 
@@ -2200,7 +2199,7 @@ footer .style_icon li a {
 
 .style_icon li {
     float: left;
-    width: 50%;
+    width: 60%;
     color: #fff;
     margin-bottom: 10px;
 }
@@ -2746,7 +2745,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #wrap_news_events {
-    margin: 100px 0;
+    margin-top: 100px;
     background: #fff;
 }
 
