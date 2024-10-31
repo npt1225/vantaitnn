@@ -357,3 +357,43 @@
         width: 100%;
     }
 }
+
+
+.contact1-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #e0f7fa;
+    border-radius: 8px;
+    background-color: #039a0f;
+    border: 2px solid #f7941d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .contact1-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .contact1-header h2 {
+    margin: 0;
+    font-size: 28px;
+    color: white;
+  }
+  .contact1-info {
+    font-size: 16px;
+    color: #004d40;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  .contact1-info strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #004d40;
+  }
+  .contact1-info a {
+    color: #0277bd;
+    text-decoration: none;
+  }
+  .contact1-info a:hover {
+    text-decoration: underline;
+  }
