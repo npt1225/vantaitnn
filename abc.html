@@ -3,102 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Web với Tính Năng Dịch</title>
+    <title>Đánh giá từ Google Places API</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0; /* Đặt margin 0 cho body để không bị thụt */
-            background-color: #f9f9f9; /* Màu nền nhẹ */
+            margin: 20px;
         }
-
-        /* Kiểu cho thanh Google Translate */
-        #google_translate_element {
-            background-color: #4CAF50; /* Màu nền của thanh dịch */
-            padding: 10px; /* Khoảng cách trong thanh */
-            color: white; /* Màu chữ */
-            text-align: center; /* Căn giữa nội dung */
-            font-weight: bold; /* In đậm chữ */
-            position: relative; /* Vị trí tương đối */
-            z-index: 1; /* Đảm bảo thanh dịch nằm trên cùng */
-        }
-
-        /* Kiểu cho nút ngôn ngữ */
-        .language-button {
-            padding: 15px 20px; /* Kích thước nút */
-            border: none; /* Bỏ viền */
-            border-radius: 5px; /* Bo góc */
-            background-color: #5cb85c; /* Màu nền nút */
-            color: white; /* Màu chữ nút */
-            cursor: pointer; /* Con trỏ khi hover */
-            margin: 0 5px; /* Khoảng cách giữa các nút */
-            font-size: 1rem; /* Kích thước chữ */
-            transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
-        }
-
-        /* Hiệu ứng hover cho nút */
-        .language-button:hover {
-            background-color: #45a049; /* Màu nút khi hover */
-        }
-        
-        /* Nội dung chính */
-        .content {
-            padding: 20px; /* Khoảng cách cho nội dung */
-            text-align: center; /* Căn giữa nội dung */
-        }
-
-        /* Hướng dẫn sử dụng */
-        .instruction {
-            margin-bottom: 20px; /* Khoảng cách cho hướng dẫn */
-            font-weight: bold; /* In đậm hướng dẫn */
-            color: #333; /* Màu chữ */
+        h2 {
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div id="google_translate_element"></div> <!-- Khu vực để hiển thị Google Translate -->
 
-    <!-- Nội dung chính -->
-    <div class="content">
-        <div class="instruction">Chọn ngôn ngữ bạn muốn dịch bằng cách nhấn vào các nút bên dưới:</div>
+    <h2>Thông tin Địa điểm</h2>
+    <p>Xếp hạng: <span id="rating">Đang tải...</span></p>
+    <p>Số lượng đánh giá: <span id="user_ratings_total">Đang tải...</span></p>
 
-        <h1>Chào mừng đến với trang của chúng tôi!</h1>
-        <p>Đây là một ví dụ về tích hợp Google Dịch để hỗ trợ nhiều ngôn ngữ.</p>
+    <script>
+        const apiKey = 'AIzaSyBECXjQPfG7ITQNOoUcCFOsOX9GhcChfLI'; 
+        const placeId = 'EkQyNzUgSMOgIEh1eSBHacOhcCwgVGjhuqFu...'; // Place ID của bạn
 
-        <!-- Các nút ngôn ngữ -->
-        <div>
-            <button class="language-button" onclick="changeLanguage('vi')">Tiếng Việt</button>
-            <button class="language-button" onclick="changeLanguage('en')">English</button>
-            <button class="language-button" onclick="changeLanguage('km')">Khmer</button>
-            <button class="language-button" onclick="changeLanguage('lo')">Lao</button>
-            <button class="language-button" onclick="changeLanguage('th')">Thai</button>
-        </div>
-    </div>
-
-    <!-- Script tải Google Translate API -->
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'vi', 
-                includedLanguages: 'vi,en,km,lo,th', 
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-            }, 'google_translate_element');
+        async function fetchPlaceDetails() {
+            try {
+                const response = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=rating,user_ratings_total&key=${apiKey}`);
+                if (!response.ok) {
+                    throw new Error('Network response was not ok: ' + response.statusText);
+                }
+                const data = await response.json();
+                
+                if (data.result) {
+                    document.getElementById('rating').textContent = data.result.rating || 'Chưa có';
+                    document.getElementById('user_ratings_total').textContent = data.result.user_ratings_total || '0';
+                } else {
+                    console.error('Không tìm thấy kết quả.');
+                }
+            } catch (error) {
+                console.error('Fetch error:', error);
+            }
         }
 
-        // Hàm để thay đổi ngôn ngữ
-        function changeLanguage(language) {
-            // Gọi Google Translate để chuyển đổi ngôn ngữ
-            const googleTranslateElement = new google.translate.TranslateElement();
-            googleTranslateElement.setEnabledLanguage(language);
-            googleTranslateElement.translatePage(language, 'vi');
-        }
-
-        // Đợi cho đến khi trang tải xong
-        window.onload = function() {
-            // Khởi tạo Google Translate khi trang tải
-            googleTranslateElementInit();
-        };
+        fetchPlaceDetails();
     </script>
+
 </body>
 </html>
