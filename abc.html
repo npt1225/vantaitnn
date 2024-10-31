@@ -1,49 +1,98 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đánh giá từ Google Places API</title>
+    <title>Leaflet Map Example</title>
+    
+    <!-- Leaflet.js CSS & JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
     <style>
+        /* Định dạng bản đồ */
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #e3f2fd, #90caf9);
         }
-        h2 {
-            text-align: center;
+
+        .map-container {
+            width: 90%;
+            max-width: 800px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .map {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+
+        /* Popup styling */
+        .leaflet-popup-content-wrapper {
+            background: #f7941d;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 8px;
+            padding: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .leaflet-popup-tip {
+            background: #f7941d;
+        }
+
+        /* Custom styling for popup content */
+        .popup-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .popup-content img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .popup-content span {
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
-    <h2>Thông tin Địa điểm</h2>
-    <p>Xếp hạng: <span id="rating">Đang tải...</span></p>
-    <p>Số lượng đánh giá: <span id="user_ratings_total">Đang tải...</span></p>
+    <!-- Leaflet.js Map -->
+    <div class="map-container">
+        <div id="leafletMap" class="map"></div>
+    </div>
 
     <script>
-        const apiKey = 'AIzaSyBECXjQPfG7ITQNOoUcCFOsOX9GhcChfLI'; 
-        const placeId = 'EkQyNzUgSMOgIEh1eSBHacOhcCwgVGjhuqFu...'; // Place ID của bạn
-
-        async function fetchPlaceDetails() {
-            try {
-                const response = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=rating,user_ratings_total&key=${apiKey}`);
-                if (!response.ok) {
-                    throw new Error('Network response was not ok: ' + response.statusText);
-                }
-                const data = await response.json();
-                
-                if (data.result) {
-                    document.getElementById('rating').textContent = data.result.rating || 'Chưa có';
-                    document.getElementById('user_ratings_total').textContent = data.result.user_ratings_total || '0';
-                } else {
-                    console.error('Không tìm thấy kết quả.');
-                }
-            } catch (error) {
-                console.error('Fetch error:', error);
-            }
-        }
-
-        fetchPlaceDetails();
+        // Leaflet.js Map Initialization
+        var leafletMap = L.map('leafletMap').setView([10.864437963935872, 106.67970362768958], 20);
+        
+        // Add OpenStreetMap tile layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(leafletMap);
+        
+        // Add marker with popup and logo
+        var logoUrl = 'https://your-logo-url.com/logo.png'; // Thay bằng URL của logo bạn
+        L.marker([10.864437963935872, 106.67970362768958]).addTo(leafletMap)
+            .bindPopup(`
+                <div class="popup-content">
+                    <img src="https://www.vantaitnn.com/assets/media/img/bg-tnn.png" alt="Logo Công Ty">
+                    <span>Công Ty TNHH TMDV Vận Tải T&N</span>
+                </div>
+            `)
+            .openPopup();
     </script>
 
 </body>

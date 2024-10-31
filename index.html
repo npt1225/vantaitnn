@@ -46,7 +46,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="./style-menu.css">
 
-
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-206852202-1"></script>
     <script>
@@ -725,7 +726,8 @@
                                                 <a href="./dich-vu/van-chuyen-chinh-ngach-vietnam-campuchia.html"
                                                     title="Vận Chuyển Chính Ngạch Đi Campuchia">
                                                     <div class="fit-thumb">
-                                                        <img class="b-lazy" src="../assets/media/chinh-ngach/chinh-ngach-campuchia.jpg"
+                                                        <img class="b-lazy"
+                                                            src="../assets/media/chinh-ngach/chinh-ngach-campuchia.jpg"
                                                             style="width: 100%"
                                                             alt="Vận Chuyển Chính Ngạch Đi Campuchia">
                                                     </div>
@@ -737,7 +739,8 @@
                                                 title="Vận Chuyển Chính Ngạch Đi Campuchia">
                                                 <h5>Vận Chuyển Chính Ngạch Đi Campuchia</h5>
                                             </a>
-                                            <p>Dịch vụ vận chuyển chính ngạch đi Campuchia của <strong>VẬN TẢI T&N</strong> đảm bảo nhanh
+                                            <p>Dịch vụ vận chuyển chính ngạch đi Campuchia của <strong>VẬN TẢI
+                                                    T&N</strong> đảm bảo nhanh
                                                 chóng, an toàn và tiết kiệm chi phí, đáp ứng mọi nhu cầu từ hàng lẻ đến
                                                 hàng nguyên container.</p>
                                             <div class="date_more">
@@ -799,17 +802,19 @@
                                 <div class="box_counter_custom number_autoplay">
                                     <div class="counter"
                                         style="background-image: url(/assets/media/img/number_clients.jpg)">10</div>
-                                    <div class="title">Năm kinh nghiệm với niềm tự h&#224;o</div>
+                                    <div class="title" style="font-size: 20px;">Năm kinh nghiệm với niềm tự h&#224;o</div>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="row no-gutters">
                                     <a class="col-6 col-md-6 box_border">
-                                        <img src="./assets/media/doi-tac/mall.jpg" style="width: 90%; border-radius: 20px;"
+                                        <img src="./assets/media/doi-tac/mall.jpg"
+                                            style="width: 90%; border-radius: 20px;"
                                             alt="C&#244;ng ty Vận Tải T&amp;N - Người Dùng">
                                     </a>
                                     <a class="col-6 col-md-6 box_border">
-                                        <img src="./assets/media/doi-tac/doitac.jpg" style="width: 80%; border-radius: 20px;" 
+                                        <img src="./assets/media/doi-tac/doitac.jpg"
+                                            style="width: 80%; border-radius: 20px;"
                                             alt="C&#244;ng ty Vận Tải T&amp;N - Người Dùng">
                                     </a>
                                 </div>
@@ -817,18 +822,24 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 align_items_start">
-                      
+
                     </div>
                     <div class="col-lg-4 box_wrapper_1">
+                        <div class="img-center">
+                            <img src="/assets/media/img/bg-tnn.png" alt="Background Image" />
+                        </div>
                         <div class="heading_3">Kh&#225;ch h&#224;ng ch&#250;ng t&#244;i</div>
-                        <p>
+                        <p style="font-size: 18px;line-height: 30px;">
                             Với hơn<b> 200 khách hàng</b> đã tin tưởng sử dụng dịch vụ</p>
-                        <p><b>Vận Tải T&amp;N</b> tự hào là công ty hàng đầu tại Việt Nam chuyên cung cấp dịch vụ
+                        <p style="font-size: 18px;line-height: 30px;"><b>Vận Tải T&amp;N</b> tự hào là công ty hàng đầu tại Việt Nam chuyên cung cấp dịch vụ
                             Logistics cho
                             cả thị trường trong nước và quốc tế, từ các cửa hàng nhỏ lẻ cho tới các doanh nghiệp lớn.
                         </p>
                         <div class="img-wrap-1"><img src="/assets/media/img/signature.png"
                                 alt="C&#244;ng ty Cổ phần Logistics U&amp;I" width="180" height="70"></div>
+                    </div>
+                    <div class="map-container">
+                        <div id="leafletMap" class="map-class"></div>
                     </div>
                 </div>
             </div>
@@ -986,6 +997,41 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T95RCDL" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    <script>
+        // Khởi tạo bản đồ Leaflet.js
+        var leafletMap = L.map('leafletMap').setView([10.864437963935872, 106.67970362768958], 20);
+
+        // Add OpenStreetMap tile layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(leafletMap);
+
+        // Add marker with popup
+        var logoUrl = 'https://www.vantaitnn.com/assets/media/img/bg-tnn.png'; // Thay bằng URL của logo bạn
+        var marker = L.marker([10.864437963935872, 106.67970362768958]).addTo(leafletMap);
+
+        // Nội dung popup với sự kiện nhấn vào để mở Google Maps
+        marker.bindPopup(`
+            <div class="popup-content" onclick="openGoogleMaps()">
+                <img src="${logoUrl}" alt="Logo Công Ty">
+                <span>Công Ty TNHH TMDV Vận Tải T&N</span>
+            </div>
+        `).openPopup();
+
+        // Hàm mở Google Maps chỉ đường
+        function openGoogleMaps() {
+            var lat = 10.864437963935872;
+            var lng = 106.67970362768958;
+            var url = `https://www.google.com/maps/place/C%C3%94NG+TY+TNHH+TMDV+V%E1%BA%ACN+T%E1%BA%A2I+T%26N/@10.8645047,106.6770942,17z/data=!4m15!1m8!3m7!1s0x3175283388ebef81:0x378aeb2d1e483e90!2zMjc1IEjDoCBIdXkgR2nDoXAsIFRo4bqhbmggTOG7mWMsIFF14bqtbiAxMiwgSOG7kyBDaMOtIE1pbmgsIFZpZXRuYW0!3b1!8m2!3d10.8644994!4d106.6796691!16s%2Fg%2F11fm48b2rf!3m5!1s0x317529a702382caf:0x88e2e222d914c4fd!8m2!3d10.8644241!4d106.67964!16s%2Fg%2F11wftn1511?entry=ttu&g_ep=EgoyMDI0MTAyNy4wIKXMDSoASAFQAw%3D%3D`;
+            window.open(url, '_blank');
+        }
+
+        // Thêm sự kiện nhấp vào bản đồ để phóng to / thu nhỏ
+        document.getElementById('mapContainer').addEventListener('click', function () {
+            this.classList.toggle('expanded');
+            leafletMap.invalidateSize(); // Cập nhật kích thước bản đồ sau khi phóng to / thu nhỏ
+        });
+    </script>
     <script>
         function sendMessage() {
             var name = document.getElementById('Name').value;
