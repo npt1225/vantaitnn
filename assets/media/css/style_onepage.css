@@ -3640,7 +3640,6 @@ color: #ffffff;
 }
 
 .maps_contact {
-    background: #039a0f;
     min-height: 100%;
     margin: 100px 0;
 }
@@ -3681,6 +3680,7 @@ color: #ffffff;
 }
 
 .maps_contact .container {
+	display: none;
 	padding: 40px 0px;
 }
 
