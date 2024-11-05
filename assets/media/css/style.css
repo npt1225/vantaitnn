@@ -201,7 +201,7 @@ body.video_open {
 }
 
 .bg_2 {
-    background: url(../index/logo_index.jpg) no-repeat;
+    background: url(../index/index_9.png) no-repeat;
     background-size: 100%;
     width: 50%;
     height: 60%;
@@ -357,7 +357,7 @@ body.video_open {
     -moz-transform: translate3d(0, 0, 0) skew(31.6deg, 0deg);
     -ms-transform: translate3d(0, 0, 0) skew(31.6deg, 0deg);
     transform: translate3d(0, 0, 0) skew(31.6deg, 0deg);
-    background: #fff;
+    background: #f7941d;
 }
 
 .gallery_item a:after {
