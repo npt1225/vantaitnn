@@ -49,6 +49,13 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 100;
 }
+
+@media screen and (max-width: 440px) {
+    .custom-popup-submenu {
+        top: 165px!important;
+        left: 60px!important;
+    }
+}
 .custom-popup-submenu a {
     font-size: 13px!important;
 }
