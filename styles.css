@@ -53,7 +53,7 @@
 @media screen and (max-width: 440px) {
     .custom-popup-submenu {
         top: 165px!important;
-        left: 60px!important;
+        left: 40px!important;
     }
 }
 .custom-popup-submenu a {
