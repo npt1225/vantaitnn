@@ -464,3 +464,46 @@
     max-width: 50%;
     height: auto;
 }
+.sub_bg-1 {
+    position: relative;
+}
+
+.logo_page-1 {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+
+#sub_bg_area .logo_page-1 span {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    background: url(./assets/media/img/bg-tnn.png) no-repeat;
+    background-size: contain;
+}
+#sub_bg_area.show-logo1 .logo_page-1, #sub_bg_area.show-logo1 .title_page {
+    opacity: 1;
+    /* -webkit-transform: translate3d(6.3vw, 0, 0);
+    -moz-transform: translate3d(6.3vw, 0, 0);
+    -o-transform: translate3d(6.3vw, 0, 0);
+    transform: translate3d(6.3vw, 0, 0); */
+}
+
+#sub_bg_area .logo_page-1 h4 {
+    font-family: riftbold;
+    color: #039a0f;
+    margin: 15px 0 6px 0;
+    font-size: 30px;
+    letter-spacing: 0.02em;
+}
+#sub_bg_area .logo_page-1 i {
+    color: #f7941d;
+    letter-spacing: 0.2em;
+}
